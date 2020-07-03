@@ -1,12 +1,13 @@
 $font_title:'Montserrat',
 sans-serif;
-$font_text: 'Courier New',
+$font_text: 'Lato',
 sans-serif;
 
 $color1: #80d3fd;
 $color2: #519e19;
 $color3: #ee5254;
 $color4: #ffc107;
+
 
 body {
     background-color: #1a0e10;
@@ -35,7 +36,7 @@ h4 {
 p {
     font-family: $font_text;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
@@ -46,13 +47,16 @@ header {
     padding-left: 1rem;
     padding-right: 2rem;
 
+    img {
+        height: 90px;
+    }
+
     nav {
         display: flex;
         align-items: center;
         height: 50px;
         text-decoration: none;
         box-sizing: border-box;
-
 
         ul {
             display: flex;
@@ -87,7 +91,6 @@ header {
 section {
     section {
 
-
         padding-top: 5rem;
         padding-bottom: 5rem;
 
@@ -103,7 +106,7 @@ footer {
     box-sizing: border-box;
 
     p {
-        font-family: 'Lato', sans-serif;
+        font-family: $font_text, sans-serif;
         font-weight: 400;
     }
 
