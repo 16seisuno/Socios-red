@@ -1,0 +1,128 @@
+$font_title:'Montserrat',
+sans-serif;
+$font_text: 'Courier New',
+sans-serif;
+
+$color1: #80d3fd;
+$color2: #519e19;
+$color3: #ee5254;
+$color4: #ffc107;
+
+body {
+    background-color: #1a0e10;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1 {
+
+    font-family: $font_title;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+h2,
+h3,
+h4 {
+    font-family: $font_title;
+    font-weight: 700;
+
+}
+
+p {
+    font-family: $font_text;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    nav {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        text-decoration: none;
+        box-sizing: border-box;
+
+
+        ul {
+            display: flex;
+            margin: 0px;
+        }
+
+        li {
+            list-style: none;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            a {
+                font-size: 1.2rem;
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &.active {
+                    font-weight: 700;
+                    color: $color1;
+                }
+
+                &:hover {
+                    color: #d6d6d6;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+section {
+    section {
+
+
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+    }
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    ul {
+        display: flex;
+        margin: 0px;
+    }
+
+    li {
+        list-style: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        a {
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+    }
+
+}
