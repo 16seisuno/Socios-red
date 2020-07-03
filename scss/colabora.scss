@@ -1,0 +1,19 @@
+@import "main";
+
+
+.main_colabora {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    article {
+        display: flex;
+        flex-flow: column wrap;
+
+        .video {
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+    }
+}
