@@ -45,6 +45,7 @@
 
     #nos_info {
         display: flex;
+        flex-flow: row wrap;
         align-items: baseline;
         justify-content: space-around;
         position: relative;
@@ -108,6 +109,7 @@
         flex-flow: column wrap;
         align-items: center;
         z-index: 2;
+        text-align: center;
 
         #title_data {
             font-size: 3rem;
@@ -120,6 +122,7 @@
             display: flex;
             flex-flow: row wrap;
             padding-top: 4rem;
+
 
             div {
                 display: flex;
@@ -137,6 +140,7 @@
                     font-weight: 700;
                     margin: 0px;
                     padding-bottom: .6rem;
+
                 }
 
                 i {
@@ -199,6 +203,10 @@
         ul {
             margin: 0px;
             padding-top: 1rem;
+
+            li {
+                list-style-position: inside;
+            }
         }
     }
 }
@@ -360,8 +368,14 @@
         }
     }
 
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
     li {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         padding-left: 1rem;
         padding-right: 0px;
