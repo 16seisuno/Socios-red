@@ -350,6 +350,22 @@
   padding-top: 5rem;
 }
 
+.pad_t_11 {
+  padding-top: 5.5rem;
+}
+
+.pad_t_12 {
+  padding-top: 6rem;
+}
+
+.pad_t_13 {
+  padding-top: 6.5rem;
+}
+
+.pad_t_14 {
+  padding-top: 7rem;
+}
+
 .mar_0 {
   margin: 0rem;
 }
@@ -732,11 +748,6 @@ body {
   background-color: #1a0e10;
 }
 
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -800,7 +811,7 @@ header nav li a {
 
 header nav li a.active {
   font-weight: 700;
-  color: #80d3fd;
+  color: #00a9ff;
 }
 
 header nav li a:hover {
@@ -808,19 +819,7 @@ header nav li a:hover {
   text-decoration: none;
 }
 
-section section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -850,6 +849,7 @@ footer li a {
   text-decoration: none;
 }
 
+/* comienza nosotros */
 #nosotros {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -909,7 +909,7 @@ footer li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 5px #80d3fd solid;
+  border: 5px #00a9ff solid;
   border-radius: 10px;
   z-index: 3;
 }
@@ -918,7 +918,7 @@ footer li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #00b7ff14;
+  background-color: #00a9ff3d;
   z-index: 1;
   border-radius: 10px;
 }
@@ -928,21 +928,21 @@ footer li a {
   z-index: 2;
 }
 
-#nosotros #nos_info h3 {
-  padding-bottom: 1rem;
-}
-
-#nosotros #nos_info h3.title_nos {
-  color: #80d3fd;
+#nosotros #nos_info h4 {
+  color: #000;
+  border-bottom: 3px solid;
 }
 
 #nosotros #nos_info p {
   color: #000;
-  margin-bottom: 0px;
 }
 
+/* termina nosotros */
+/* comienza data */
 #data {
   background-color: #ee5254;
+  background-image: url(../img/textura5.png);
+  background-size: cover;
 }
 
 #data article#title_data {
@@ -958,30 +958,34 @@ footer li a {
           filter: drop-shadow(0px 1px 5px #ac0c0c);
 }
 
-#data article.data div h3 {
-  color: #000;
+#data article.data div h4 {
   font-weight: 900;
+  color: #000000d1;
+  text-shadow: 0px 2px 2px #ffffff87, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
 #data article.data div p {
   color: #fff;
   font-weight: 700;
+  letter-spacing: 1px;
   margin: 0px;
   padding-bottom: .6rem;
 }
 
 #data article.data div i {
-  color: #fff;
+  color: #ffffff00;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #222, 1px 4px 6px transparent;
   padding-bottom: 1rem;
-  -webkit-filter: drop-shadow(0px 1px 5px #ac0c0c);
-          filter: drop-shadow(0px 1px 5px #ac0c0c);
+  -webkit-filter: drop-shadow(0px 1px 5px #dd2424);
+          filter: drop-shadow(0px 1px 5px #dd2424);
 }
 
 #data article.data div .linea {
-  padding: 0px;
   border-bottom: 4px solid #000;
 }
 
+/* termina data */
+/* comienza conexiones */
 #conexiones {
   background: #f8f8ff;
   background-image: url(../img/textura2.png);
@@ -1024,51 +1028,40 @@ footer li a {
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
-#conexiones article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#conexiones article ul {
-  margin: 0px;
-  padding-top: 1rem;
-}
-
-#conexiones article ul li {
+#conexiones article li {
   list-style-position: inside;
 }
 
-#equipo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffc107;
-  padding-top: 7rem;
+/* termina conexiones */
+/* comienza participantes */
+#participantes {
+  position: relative;
+  background-color: #fff;
 }
 
-#equipo #title_equipo {
+#participantes .textura {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/textura4.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+}
+
+#participantes #equipo {
+  background-color: #ffc10787;
+  z-index: 3;
+  position: relative;
+}
+
+#participantes #equipo #title_equipo {
   font-size: 3rem;
   color: #000;
   padding-bottom: .5rem;
   border-bottom: 7px #000 solid;
 }
 
-#equipo article {
+#participantes #equipo article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1083,7 +1076,7 @@ footer li a {
   padding-top: 3rem;
 }
 
-#equipo article .card {
+#participantes #equipo article .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,40 +1102,9 @@ footer li a {
   position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
-  /*
-            .borde {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                border: 3px solid #000;
-                z-index: 3;
-            }
-
-            .fondo1 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: #000;
-                z-index: 2;
-                margin-right: 3.5rem;
-                margin-top: 1rem;
-            }
-
-            &.linea {
-                padding-block: 2rem;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                border-top: 0px;
-                border-left: 0px;
-                border-right: 0px;
-                border-bottom: 5px solid #000;
-                background-color: $color4;
-                z-index: 1;
-            }
-*/
 }
 
-#equipo article .card div {
+#participantes #equipo article .card div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,7 +1118,7 @@ footer li a {
   padding: .5rem;
 }
 
-#equipo article .card ul {
+#participantes #equipo article .card ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,7 +1132,7 @@ footer li a {
   padding: 0px;
 }
 
-#equipo article .card li {
+#participantes #equipo article .card li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1178,18 +1140,18 @@ footer li a {
   padding-right: 1rem;
 }
 
-#equipo article .card li i {
+#participantes #equipo article .card li i {
   color: #ffc107;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-#equipo article .card li i:hover {
+#participantes #equipo article .card li i:hover {
   color: rgba(255, 193, 7, 0.75);
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
-#equipo article .card img {
+#participantes #equipo article .card img {
   margin-top: 2rem;
   border-radius: 50%;
   margin-bottom: 2rem;
@@ -1197,111 +1159,182 @@ footer li a {
           filter: drop-shadow(0px 0px 5px #e1e1e1);
 }
 
-#equipo article .card p {
+#participantes #equipo article .card p {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
 
-#confiaron {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: white;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, white), to(#ffc107));
-  background: linear-gradient(0deg, white 10%, #ffc107 100%);
+#participantes #confiaron {
+  background: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffffe6), to(#ffc10791));
+  background: linear-gradient(0deg, #ffffffe6 10%, #ffc10791 100%);
   text-align: center;
-  padding-top: 2rem;
+  position: relative;
+  z-index: 3;
 }
 
-#confiaron #title_confiaron {
+#participantes #confiaron #title_confiaron {
   font-size: 3rem;
   color: #000;
   padding-bottom: .5rem;
   border-bottom: 7px #000 solid;
 }
 
-#confiaron #texto_confiaron {
-  padding-top: 1rem;
-}
-
-#confiaron .confiaron,
-#confiaron .contribuyeron {
-  padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#participantes #confiaron .confiaron,
+#participantes #confiaron .contribuyeron {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-#confiaron .confiaron .img_confiaron,
-#confiaron .contribuyeron .img_confiaron {
+#participantes #confiaron .confiaron .img_confiaron,
+#participantes #confiaron .contribuyeron .img_confiaron {
   height: 70px;
 }
 
-#confiaron .contribuyeron {
-  padding-top: 3rem;
+/* termina participantes */
+/* comienza footer */
+#footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-image: url(../img/textura2.png);
 }
 
-#footer {
+#footer #formulario {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #formulario h2,
+#footer #formulario h5 {
+  color: #fff;
+  padding: 0px;
+  padding-bottom: .5rem;
+}
+
+#footer #formulario span {
+  color: #00a9ff;
+}
+
+#footer #formulario form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  padding: 0px;
+}
+
+#footer #formulario form fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  padding: 0;
+  width: 100%;
+}
+
+#footer #formulario form fieldset textarea {
+  height: 109px;
+}
+
+#footer #formulario form fieldset input,
+#footer #formulario form fieldset textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#footer #formulario form fieldset input:hover,
+#footer #formulario form fieldset textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #00a9ff;
+}
+
+#footer #formulario form fieldset input:focus,
+#footer #formulario form fieldset textarea:focus {
+  outline: 0;
+  border: 1px solid #519e19;
+}
+
+#footer #formulario form fieldset ::-webkit-input-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset :-moz-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset ::-moz-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset :-ms-input-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#footer #formulario form fieldset button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #00a9ff;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#footer #formulario form fieldset button:hover {
+  background: #519e19;
+  -webkit-transition: background 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#footer #formulario form fieldset button:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#footer #info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-inline: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  height: 100px;
 }
 
-#footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#footer div p {
+#footer #info div p {
   color: #fff;
   margin: 0px;
 }
 
-#footer div img {
+#footer #info div img {
   height: 50px;
   padding-right: 1rem;
 }
 
-#footer ul {
+#footer #info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,7 +1344,7 @@ footer li a {
           flex-flow: row wrap;
 }
 
-#footer li {
+#footer #info li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1326,39 +1359,17 @@ footer li a {
   padding-right: 0px;
 }
 
-#footer li p {
+#footer #info li p {
   color: #fff;
   font-size: 700;
   padding-left: 1rem;
   margin: 0px;
 }
 
-#footer li i {
+#footer #info li i {
   color: #fff;
   padding-left: 1rem;
 }
 
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
-
-    .fondo {
-        right: -15px;
-    }
-
-    #equipo {
-        article {
-            margin-left: 3rem;
-
-            div.col-2 {
-                margin-right: 3rem;
-
-                .fondo1 {
-                    right: -40px;
-                }
-            }
-        }
-    }
-}
-
-*/
+/* termina footer */
 /*# sourceMappingURL=nosotros.css.map */
