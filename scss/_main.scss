@@ -3,7 +3,7 @@ sans-serif;
 $font_text: 'Lato',
 sans-serif;
 
-$color1: #80d3fd;
+$color1: #00a9ff;
 $color2: #519e19;
 $color3: #ee5254;
 $color4: #ffc107;
@@ -48,7 +48,7 @@ $color4: #ffc107;
     }
 }
 
-@for $n from 0 through 10 {
+@for $n from 0 through 14 {
     .pad_t_#{$n} {
         padding-top: .5rem * $n;
     }
@@ -117,11 +117,6 @@ body {
     background-color: #1a0e10;
 }
 
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 h1 {
 
     font-family: $font_title;
@@ -186,20 +181,7 @@ header {
     }
 }
 
-section {
-    section {
-
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-
-    }
-
-}
-
 footer {
-    display: flex;
-    align-items: center;
-    height: 50px;
     text-decoration: none;
     box-sizing: border-box;
 
