@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .pad_0 {
   padding: 0rem;
 }
@@ -774,7 +779,7 @@ header {
 }
 
 header img {
-  height: 60px;
+  height: 50px;
 }
 
 header nav {
@@ -807,11 +812,6 @@ header nav li a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-header nav li a.active {
-  font-weight: 700;
-  color: #00a9ff;
 }
 
 header nav li a:hover {
@@ -849,36 +849,453 @@ footer li a {
   text-decoration: none;
 }
 
-.main_colabora {
+/* comienza footer */
+#footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-image: url(../img/textura2.png);
+}
+
+#footer #formulario {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #formulario h2,
+#footer #formulario h5 {
+  color: #fff;
+  padding: 0px;
+  padding-bottom: .5rem;
+}
+
+#footer #formulario span {
+  color: #00a9ff;
+}
+
+#footer #formulario form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  padding: 0px;
 }
 
-.main_colabora article {
+#footer #formulario form fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  padding: 0;
+  width: 100%;
+}
+
+#footer #formulario form fieldset textarea {
+  height: 109px;
+}
+
+#footer #formulario form fieldset input,
+#footer #formulario form fieldset textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#footer #formulario form fieldset input:hover,
+#footer #formulario form fieldset textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #00a9ff;
+}
+
+#footer #formulario form fieldset input:focus,
+#footer #formulario form fieldset textarea:focus {
+  outline: 0;
+  border: 1px solid #519e19;
+}
+
+#footer #formulario form fieldset ::-webkit-input-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset :-moz-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset ::-moz-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset :-ms-input-placeholder {
+  color: #636363;
+}
+
+#footer #formulario form fieldset select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#footer #formulario form fieldset button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #00a9ff;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#footer #formulario form fieldset button:hover {
+  background: #519e19;
+  -webkit-transition: background 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#footer #formulario form fieldset button:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#footer #info {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #info div {
+  height: 50px;
+}
+
+#footer #info div p {
+  color: #fff;
+  margin: 0px;
+}
+
+#footer #info div img {
+  height: 50px;
+  padding-inline: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#footer #info div.seisuno {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #fff;
+}
+
+#footer #info div.seisuno p {
+  font-size: 12px;
+  border-bottom: 1px solid #fff;
+}
+
+#footer #info div.seisuno img {
+  height: 35px !important;
+}
+
+#footer #info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-.main_colabora article .video {
-  -webkit-box-orient: vertical;
+#footer #info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 1rem;
+  padding-right: 0px;
 }
+
+#footer #info li p {
+  color: #fff;
+  font-size: 700;
+  padding-left: 1rem;
+  margin: 0px;
+}
+
+#footer #info li i {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+/* termina footer */
+.drop-shadow {
+  position: relative;
+  width: 80%;
+  padding: 1em;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px #d9d9d9, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 5px 15px #d9d9d9, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+header .active {
+  font-weight: 700;
+  color: #519e19;
+}
+
+#main_colabora {
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/textura2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+#main_colabora article {
+  z-index: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main_colabora article h1 {
+  text-align: right;
+  color: #519e19c7;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#main_colabora .sombra_top {
+  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
+          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#main_colabora .sombra_bottom {
+  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#colabora {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #519e19;
+  background-image: url(../img/textura8.svg);
+  background-size: cover;
+}
+
+#colabora #confiaron {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffffe6), to(#519e1900));
+  background: linear-gradient(0deg, #ffffffe6 10%, #519e1900 100%);
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+#colabora #confiaron p {
+  font-weight: 400;
+  text-align: center;
+}
+
+#colabora #confiaron #title_confiaron {
+  font-size: 3rem;
+  color: #ffffff;
+  padding-bottom: .5rem;
+}
+
+#colabora #confiaron .confiaron {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#colabora #confiaron .confiaron img {
+  height: 80px;
+}
+
+#colabora #confiaron .confiaron img.coder {
+  height: 65px;
+}
+
+#colabora #confiaron .contribuyeron {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#colabora #confiaron .contribuyeron h2 {
+  font-size: 2rem;
+  color: #000000d9;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#colabora article p {
+  font-size: 18px;
+  color: #000;
+  text-align: justify;
+}
+
+#colabora article#donar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#colabora article#donar div.otras_formas {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+#colabora article#donar div.otras_formas a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#colabora article#donar div.otras_formas a:hover {
+  font-weight: 700;
+}
+
+#colabora article#donar div div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#colabora article#donar div div div {
+  padding: 1rem;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px #1d3c0791, 0 0 5px #a0abd7 inset;
+          box-shadow: 0 2px 10px #1d3c0791, 0 0 5px #a0abd7 inset;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+#colabora article#donar div div div:hover {
+  -webkit-box-shadow: 0 2px 10px #1d3c0791, 0 0 5px #0b9fe4 inset;
+          box-shadow: 0 2px 10px #1d3c0791, 0 0 5px #0b9fe4 inset;
+}
+
+#colabora article#donar div div div a {
+  color: #000000a6;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+#colabora article#donar div div div a:hover {
+  color: #00aaff9f;
+  text-decoration: none;
+}
+
+#colabora article p {
+  font-weight: 700;
+}
+
+#colabora article h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#colabora article h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#colabora article .linea {
+  width: 115px;
+  border-bottom: 7px solid #fff;
+}
+
+#colabora #proceso {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#colabora #proceso h2 {
+  font-size: 3.5rem;
+}
+
+#colabora #proceso div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  z-index: 2;
+}
+
+#colabora #proceso div h2 {
+  left: 10px;
+  top: -50px;
+  font-size: 7rem;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.192);
+  z-index: 1;
+  font-family: "Lato", sans-serif;
+}
+
+#colabora #proceso img {
+  height: 120px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+#colabora #proceso .linea {
+  border-bottom: 5px solid #000;
+}
+
+/* termina confiaron */
 /*# sourceMappingURL=colabora.css.map */
