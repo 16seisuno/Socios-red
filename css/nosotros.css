@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .pad_0 {
   padding: 0rem;
 }
@@ -774,7 +779,7 @@ header {
 }
 
 header img {
-  height: 60px;
+  height: 50px;
 }
 
 header nav {
@@ -807,11 +812,6 @@ header nav li a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-header nav li a.active {
-  font-weight: 700;
-  color: #00a9ff;
 }
 
 header nav li a:hover {
@@ -849,350 +849,6 @@ footer li a {
   text-decoration: none;
 }
 
-/* comienza nosotros */
-#nosotros {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #f8f8ff;
-  position: relative;
-  z-index: 2;
-  background-image: url(../img/textura.png);
-}
-
-#nosotros .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-#nosotros .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-#nosotros #nos_descripcion {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#nosotros #nos_descripcion h1 {
-  color: #000000;
-  border: 10px solid #000000;
-}
-
-#nosotros #nos_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: relative;
-}
-
-#nosotros #nos_info .borde {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 5px #00a9ff solid;
-  border-radius: 10px;
-  z-index: 3;
-}
-
-#nosotros #nos_info .fondo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #00a9ff3d;
-  z-index: 1;
-  border-radius: 10px;
-}
-
-#nosotros #nos_info article {
-  padding: 2rem;
-  z-index: 2;
-}
-
-#nosotros #nos_info h4 {
-  color: #000;
-  border-bottom: 3px solid;
-}
-
-#nosotros #nos_info p {
-  color: #000;
-}
-
-/* termina nosotros */
-/* comienza data */
-#data {
-  background-color: #ee5254;
-  background-image: url(../img/textura5.png);
-  background-size: cover;
-}
-
-#data article#title_data {
-  z-index: 2;
-  text-align: center;
-}
-
-#data article#title_data .title_data {
-  font-size: 3rem;
-  color: #fff;
-  border-bottom: 7px #fff solid;
-  -webkit-filter: drop-shadow(0px 1px 5px #ac0c0c);
-          filter: drop-shadow(0px 1px 5px #ac0c0c);
-}
-
-#data article.data div h4 {
-  font-weight: 900;
-  color: #000000d1;
-  text-shadow: 0px 2px 2px #ffffff87, 0 0 0 #000, 1px 4px 6px transparent;
-}
-
-#data article.data div p {
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 0px;
-  padding-bottom: .6rem;
-}
-
-#data article.data div i {
-  color: #ffffff00;
-  text-shadow: 0px 2px 2px #fff, 0 0 0 #222, 1px 4px 6px transparent;
-  padding-bottom: 1rem;
-  -webkit-filter: drop-shadow(0px 1px 5px #dd2424);
-          filter: drop-shadow(0px 1px 5px #dd2424);
-}
-
-#data article.data div .linea {
-  border-bottom: 4px solid #000;
-}
-
-/* termina data */
-/* comienza conexiones */
-#conexiones {
-  background: #f8f8ff;
-  background-image: url(../img/textura2.png);
-  position: relative;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#conexiones .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-#conexiones .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-#conexiones .title_conex {
-  -webkit-filter: drop-shadow(0px 1px 15px #dfdfdf);
-          filter: drop-shadow(0px 1px 15px #dfdfdf);
-}
-
-#conexiones .title_conex h2 {
-  color: rgba(0, 0, 0, 0.7);
-  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
-}
-
-#conexiones .title_conex h2 .conex {
-  color: #519e19;
-  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
-}
-
-#conexiones article li {
-  list-style-position: inside;
-}
-
-/* termina conexiones */
-/* comienza participantes */
-#participantes {
-  position: relative;
-  background-color: #fff;
-}
-
-#participantes .textura {
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/textura4.png);
-  background-size: cover;
-  position: absolute;
-  z-index: 2;
-}
-
-#participantes #equipo {
-  background-color: #ffc10787;
-  z-index: 3;
-  position: relative;
-}
-
-#participantes #equipo #title_equipo {
-  font-size: 3rem;
-  color: #000;
-  padding-bottom: .5rem;
-  border-bottom: 7px #000 solid;
-}
-
-#participantes #equipo article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  padding-top: 3rem;
-}
-
-#participantes #equipo article .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #f8f8ff;
-  -webkit-filter: drop-shadow(0px 1px 15px #d09c00);
-          filter: drop-shadow(0px 1px 15px #d09c00);
-  border-radius: 10px;
-  border: 2px solid #dfdfdf;
-  -webkit-box-shadow: inset 0 -2px 15px 0px #d7d9f0;
-          box-shadow: inset 0 -2px 15px 0px #d7d9f0;
-  margin-inline: 1.5rem;
-  margin-right: 1.5rem;
-  position: relative;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#participantes #equipo article .card div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: .5rem;
-}
-
-#participantes #equipo article .card ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px;
-}
-
-#participantes #equipo article .card li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#participantes #equipo article .card li i {
-  color: #ffc107;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-#participantes #equipo article .card li i:hover {
-  color: rgba(255, 193, 7, 0.75);
-  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
-}
-
-#participantes #equipo article .card img {
-  margin-top: 2rem;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-  -webkit-filter: drop-shadow(0px 0px 5px #e1e1e1);
-          filter: drop-shadow(0px 0px 5px #e1e1e1);
-}
-
-#participantes #equipo article .card p {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-}
-
-#participantes #confiaron {
-  background: #ffffff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffffe6), to(#ffc10791));
-  background: linear-gradient(0deg, #ffffffe6 10%, #ffc10791 100%);
-  text-align: center;
-  position: relative;
-  z-index: 3;
-}
-
-#participantes #confiaron #title_confiaron {
-  font-size: 3rem;
-  color: #000;
-  padding-bottom: .5rem;
-  border-bottom: 7px #000 solid;
-}
-
-#participantes #confiaron .confiaron,
-#participantes #confiaron .contribuyeron {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#participantes #confiaron .confiaron .img_confiaron,
-#participantes #confiaron .contribuyeron .img_confiaron {
-  height: 70px;
-}
-
-/* termina participantes */
 /* comienza footer */
 #footer {
   -webkit-box-pack: center;
@@ -1319,9 +975,13 @@ footer li a {
 }
 
 #footer #info {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #info div {
+  height: 50px;
 }
 
 #footer #info div p {
@@ -1331,7 +991,24 @@ footer li a {
 
 #footer #info div img {
   height: 50px;
+  padding-inline: 1rem;
+  padding-left: 1rem;
   padding-right: 1rem;
+}
+
+#footer #info div.seisuno {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #fff;
+}
+
+#footer #info div.seisuno p {
+  font-size: 12px;
+  border-bottom: 1px solid #fff;
+}
+
+#footer #info div.seisuno img {
+  height: 35px !important;
 }
 
 #footer #info ul {
@@ -1372,4 +1049,346 @@ footer li a {
 }
 
 /* termina footer */
+.drop-shadow {
+  position: relative;
+  width: 80%;
+  padding: 1em;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px #d9d9d9, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 5px 15px #d9d9d9, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+header .active {
+  font-weight: 700;
+  color: #00a9ff;
+}
+
+/* comienza nosotros */
+#nosotros {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #f8f8ff;
+  position: relative;
+  z-index: 2;
+  background-image: url(../img/textura2.png);
+  background-position: center;
+}
+
+#nosotros .sombra_top {
+  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
+          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#nosotros .sombra_bottom {
+  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#nosotros #nos_descripcion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nosotros #nos_descripcion h1 {
+  color: #020202c7;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  text-transform: uppercase;
+}
+
+#nosotros #nos_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+#nosotros #nos_info article {
+  padding: 2rem;
+  z-index: 3;
+}
+
+#nosotros #nos_info h4 {
+  color: #000;
+  border-bottom: 3px solid;
+}
+
+#nosotros #nos_info p {
+  color: #000;
+}
+
+#nosotros #nos_info .fondo {
+  background-color: #00c3ff10;
+  -webkit-box-shadow: 0 5px 15px #b6c2df, 0 0 2px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 5px 15px #b6c2df, 0 0 2px rgba(0, 0, 0, 0.1) inset;
+  border: 5px solid #fff;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+/* termina nosotros */
+/* comienza data */
+#data {
+  background-color: #ffe407;
+  background-image: url(../img/textura6.png);
+  background-size: cover;
+}
+
+#data article#title_data {
+  z-index: 2;
+  text-align: center;
+}
+
+#data article#title_data .title_data {
+  font-size: 3rem;
+  color: #000000d9;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#data article.data {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+#data article.data div {
+  text-align: center;
+}
+
+#data article.data div h4 {
+  font-weight: 900;
+  color: #000000d9;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#data article.data div p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding-bottom: .6rem;
+  color: #000000d9;
+  text-shadow: 0px 2px 2px #ffffffc4, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#data article.data div i {
+  color: #ffffff00;
+  text-shadow: 0px 3px 1px #fff, 0 0 0 #333, 1px 4px 3px #ffffff9c;
+  padding-bottom: 1rem;
+}
+
+#data article.data div .linea {
+  border-bottom: 4px solid #000;
+}
+
+/* termina data */
+/* comienza conexiones */
+#conexiones {
+  background: #f8f8ff;
+  background-image: url(../img/textura2.png);
+  position: relative;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#conexiones .sombra_top {
+  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
+          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#conexiones .sombra_bottom {
+  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#conexiones .title_conex {
+  -webkit-filter: drop-shadow(0px 1px 15px #dfdfdf);
+          filter: drop-shadow(0px 1px 15px #dfdfdf);
+}
+
+#conexiones .title_conex h2 {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#conexiones .title_conex h2 .conex {
+  color: #519e19;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#conexiones article ul {
+  text-align: justify;
+}
+
+/* termina conexiones */
+/* comienza participantes */
+#participantes {
+  position: relative;
+  background-color: #fff;
+}
+
+#participantes .textura {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/textura4.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+}
+
+#participantes #equipo {
+  background-color: #ffc10787;
+  z-index: 3;
+  position: relative;
+}
+
+#participantes #equipo #title_equipo {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: .5rem;
+  color: #000000d9;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#participantes #equipo article {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#participantes #equipo article .card {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f8f8ff;
+  -webkit-filter: drop-shadow(0px 1px 8px #b789008f);
+          filter: drop-shadow(0px 1px 8px #b789008f);
+  border-radius: 10px;
+  border: 2px solid #dfdfdf;
+  -webkit-box-shadow: inset 0 -2px 15px 0px #d7d9f0;
+          box-shadow: inset 0 -2px 15px 0px #d7d9f0;
+  position: relative;
+  max-width: 400px;
+}
+
+#participantes #equipo article .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+}
+
+#participantes #equipo article .card li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#participantes #equipo article .card li i {
+  color: #ffc107;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#participantes #equipo article .card li i:hover {
+  color: rgba(255, 193, 7, 0.75);
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#participantes #equipo article .card img {
+  width: 11rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  -webkit-filter: drop-shadow(0px 0px 5px #e1e1e1);
+          filter: drop-shadow(0px 0px 5px #e1e1e1);
+}
+
+#participantes #equipo article .card p {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+#participantes #confiaron {
+  background: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffffe6), to(#ffc10791));
+  background: linear-gradient(0deg, #ffffffe6 10%, #ffc10791 100%);
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+#participantes #confiaron #title_confiaron {
+  font-size: 3rem;
+  padding-bottom: .5rem;
+  color: #000000d9;
+  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#participantes #confiaron .confiaron {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#participantes #confiaron .confiaron img {
+  height: 80px;
+}
+
+#participantes #confiaron .confiaron img.coder {
+  height: 65px;
+}
+
+#participantes #confiaron .contribuyeron {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* termina participantes */
 /*# sourceMappingURL=nosotros.css.map */

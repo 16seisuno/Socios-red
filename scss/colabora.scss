@@ -1,19 +1,243 @@
 @import "main";
 
+header .active {
+    font-weight: 700;
+    color: $color2;
 
-.main_colabora {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+}
+
+#main_colabora {
+    background-color: #fff;
+    justify-content: center;
+    background-image: url(../img/textura2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
 
     article {
-        display: flex;
-        flex-flow: column wrap;
+        z-index: 3;
+        justify-content: center;
 
-        .video {
-            flex-flow: column wrap;
+        h1 {
+            text-align: right;
+            color: #519e19c7;
+            text-shadow: 0px 2px 2px #fff,
+                0 0 0 #000,
+                1px 4px 6px transparent;
+        }
+
+
+    }
+
+    .sombra_top {
+        box-shadow: inset 0 15px 20px -5px #ccd0ff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .sombra_bottom {
+        box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+
+#colabora {
+    align-items: stretch;
+    justify-content: space-evenly;
+    background-color: $color2;
+    background-image: url(../img/textura8.svg);
+    background-size: cover;
+
+    #confiaron {
+        justify-content: center;
+        background: linear-gradient(0deg, #ffffffe6 10%, #519e1900 100%);
+        text-align: center;
+        position: relative;
+        z-index: 3;
+
+        p {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        #title_confiaron {
+            font-size: 3rem;
+            color: #ffffff;
+            padding-bottom: .5rem;
+        }
+
+        .confiaron {
+            justify-content: space-evenly;
+
+            img {
+                height: 80px;
+
+                &.coder {
+                    height: 65px;
+                }
+            }
+        }
+
+        .contribuyeron {
+            justify-content: center;
+
+            h2 {
+                font-size: 2rem;
+                color: #000000d9;
+                text-shadow: 0px 2px 2px #fff,
+                    0 0 0 #000,
+                    1px 4px 6px transparent;
+            }
+        }
+    }
+
+    article {
+
+
+
+        p {
+            font-size: 18px;
+            color: #000;
+            text-align: justify;
+        }
+
+        &#donar {
+
+            justify-content: center;
+
+            div {
+
+                &.otras_formas {
+                    font-size: 1.5rem;
+                    width: 100%;
+                    text-align: center;
+
+                    a {
+                        color: #fff;
+                        text-decoration: underline;
+
+                        &:hover {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                div {
+                    justify-content: center;
+
+
+                    div {
+                        padding: 1rem;
+                        background-color: #fff;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 10px;
+                        box-shadow: 0 2px 10px #1d3c0791,
+                            0 0 5px #a0abd7 inset;
+                        transition: .2s ease-in;
+
+                        &:hover {
+                            box-shadow: 0 2px 10px #1d3c0791,
+                                0 0 5px #0b9fe4 inset;
+                        }
+
+                        a {
+                            color: #000000a6;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            text-shadow: 0px 2px 2px #fff,
+                                0 0 0 #000,
+                                1px 4px 6px transparent;
+
+                            transition: .2s ease-in;
+
+                            &:hover {
+                                color: #00aaff9f;
+                                text-decoration: none;
+                            }
+                        }
+
+
+
+                    }
+                }
+
+
+            }
+        }
+
+        p {
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .linea {
+            width: 115px;
+            border-bottom: 7px solid #fff;
+
+        }
+    }
+
+    #proceso {
+        justify-content: space-evenly;
+        text-align: center;
+        position: relative;
+        align-items: stretch;
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        div {
             align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+            z-index: 2;
+
+            h2 {
+                left: 10px;
+                top: -50px;
+                font-size: 7rem;
+                position: absolute;
+                color: rgba(0, 0, 0, 0.192);
+                z-index: 1;
+                font-family: $font_text;
+            }
+        }
+
+        img {
+            height: 120px;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .linea {
+            border-bottom: 5px solid #000;
         }
 
     }
 }
+
+
+/* termina confiaron */

@@ -8,6 +8,12 @@ $color2: #519e19;
 $color3: #ee5254;
 $color4: #ffc107;
 
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 @for $n from 0 through 10 {
     .pad_#{$n} {
         padding: .5rem * $n;
@@ -142,7 +148,7 @@ header {
     justify-content: space-between;
 
     img {
-        height: 60px;
+        height: 50px;
     }
 
     nav {
@@ -166,11 +172,6 @@ header {
                 color: #fff;
                 text-transform: uppercase;
                 text-decoration: none;
-
-                &.active {
-                    font-weight: 700;
-                    color: $color1;
-                }
 
                 &:hover {
                     color: #d6d6d6;
@@ -208,4 +209,192 @@ footer {
 
     }
 
+}
+
+/* comienza footer */
+
+#footer {
+    justify-content: center;
+    background-color: #000;
+    background-image: url(../img/textura2.png);
+
+    #formulario {
+        text-align: center;
+        justify-content: center;
+
+        h2,
+        h5 {
+            color: #fff;
+            padding: 0px;
+            padding-bottom: .5rem;
+        }
+
+        span {
+            color: $color1;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row wrap;
+            padding: 0px;
+
+            fieldset {
+                border: medium none !important;
+                margin: 0 0 10px;
+                padding: 0;
+                width: 100%;
+
+                textarea {
+                    height: 109px;
+                }
+
+                input,
+                textarea {
+                    box-sizing: border-box;
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    background: #FFF;
+                    margin: 0 0 5px;
+                    padding: 10px;
+                    font-size: 1rem;
+
+                    &:hover {
+                        -webkit-transition: border-color 0.3s ease-in-out;
+                        -moz-transition: border-color 0.3s ease-in-out;
+                        transition: border-color 0.3s ease-in-out;
+
+                        border: 1px solid $color1;
+                    }
+
+                    &:focus {
+                        outline: 0;
+                        border: 1px solid $color2;
+                    }
+                }
+
+                ::-webkit-input-placeholder {
+                    color: #636363;
+                }
+
+                :-moz-placeholder {
+                    color: #636363;
+                }
+
+                ::-moz-placeholder {
+                    color: #636363;
+                }
+
+                :-ms-input-placeholder {
+                    color: #636363;
+                }
+
+                select {
+                    box-sizing: border-box;
+                    width: 100%;
+                    cursor: pointer;
+                    border: 1px solid #ccc;
+                    background: #FFF;
+                    margin: 0 0 5px;
+                    padding: 10px;
+                }
+
+                button {
+                    cursor: pointer;
+                    width: 100%;
+                    border: none;
+                    background: $color1;
+                    color: #FFF;
+                    margin: 0 0 5px;
+                    padding: 10px;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background: $color2;
+                        -webkit-transition: background 0.3s ease-in-out;
+                        -moz-transition: background 0.3s ease-in-out;
+                        transition: background-color 0.3s ease-in-out;
+                    }
+
+                    &:active {
+                        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    #info {
+        justify-content: center;
+
+        div {
+            height: 50px;
+
+            p {
+                color: #fff;
+                margin: 0px;
+            }
+
+            img {
+                height: 50px;
+                padding-inline: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            &.seisuno {
+                align-self: flex-end;
+                color: #fff;
+
+                p {
+                    font-size: 12px;
+                    border-bottom: 1px solid #fff;
+                }
+
+                img {
+                    height: 35px !important;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        li {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 0px;
+
+            p {
+                color: #fff;
+                font-size: 700;
+                padding-left: 1rem;
+                margin: 0px;
+            }
+
+            i {
+                color: #fff;
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+/* termina footer */
+
+.drop-shadow {
+    position: relative;
+    width: 80%;
+    padding: 1em;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 15px #d9d9d9,
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 5px 15px #d9d9d9,
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 5px 15px #d9d9d9,
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
