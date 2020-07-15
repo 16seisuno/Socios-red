@@ -29,19 +29,42 @@
         <!--comienza header--------------------------->
 
         <header class="center_r pad_inl_2 pad_block_1">
-            <a href="index.html"><img src="img/logo.png" alt="logo_socios.red"></a>
+            <a class="logo_header" href="index.html"><img src="img/logo.png" alt="logo_socios.red"></a>
 
 
-            <nav>
+            <nav class="menu_1">
                 <ul class="mar_0">
                     <li>
                         <a href="index.html">Inicio</a> </li>
                     <li>
-                        <a href="nosotros.html">Conocenos</a> </li>
+                        <a href="nosotros.html" class="active">Conocenos</a> </li>
                     <li>
-                        <a href="colabora.html" class="active">Colabora</a> </li>
+                        <a href="colabora.html">Colabora</a> </li>
+                    <li>
+                        <a href="#footer">Contacto</a> </li>
                 </ul>
             </nav>
+
+            <div class="full-menu">
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a> </li>
+                        <li>
+                            <a href="nosotros.html">Conocenos</a> </li>
+                        <li>
+                            <a href="colabora.html" class="activo">Colabora</a> </li>
+                        <li>
+                            <a class="menu_contacto" href="#footer">Contacto</a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hamburguer">
+                <div class="lines line-top"></div>
+                <div class="lines line-mid"></div>
+                <div class="lines line-bottom"></div>
+            </div>
         </header>
 
         <!--termina header---------------------------->
@@ -53,11 +76,11 @@
             <div class="sombra_top"></div>
             <div class="sombra_bottom"></div>
 
-            <article class="col-10 col-lg-12 col-xl-6 center_c">
-                <h1>ayudanos a revelar la verdad con un solo click</h1>
+            <article class="col-10 col-lg-10 col-xl-6 center_c">
+                <h1>Ayudanos a revelar la verdad con un solo click</h1>
             </article>
 
-            <article class="col-6 center_c">
+            <article class="col-12 col-lg-10 col-xl-6 center_c">
 
                 <iframe class="drop-shadow" width="80%" height="400px" src="https://www.youtube.com/embed/TGadKXAveqA"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -71,78 +94,80 @@
 
 
 
-        <section id="colabora" class="center_r pad_t_10">
+        <section id="colabora" class="center_r pad_t_6">
 
-            <article id="donar" class="col-4 pad_4 center_r">
+            <div class="center_r pad_b_4">
+                <article id="donar" class="col-12 col-md-10 col-lg-6 pad_4 center_r">
 
-                <h3>Elegí cuanto querés donar</h3>
+                    <h3>Elegí cuánto querés donar</h3>
 
-                <div class="col-12 center_r pad_0 pad_b_1">
-                    <div class="col-4 pad_2 center_c">
-                        <div class="drop-shadow">
-                            <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton"
-                                target="">ARS$100</a>
+                    <div class="col-12 center_r pad_0 pad_b_1">
+                        <div class="col-10 col-md-8 col-lg-4 pad_2 center_c">
+                            <div class="drop-shadow">
+                                <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton"
+                                    target="">ARS$100</a>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-md-8 col-lg-4 pad_2 center_c">
+                            <div class="">
+                                <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton"
+                                    target="">ARS$300</a>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-8 col-lg-4 pad_2 center_c">
+                            <div class="">
+                                <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton"
+                                    target="">ARS$500</a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-4 pad_2 center_c">
-                        <div class="">
-                            <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton"
-                                target="">ARS$300</a>
-                        </div>
+                    <div class="col-12 otras_formas">
+                        <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton" target="">Otras
+                            formas
+                            de
+                            colaborar</a>
                     </div>
-                    <div class="col-4 pad_2 center_c">
-                        <div class="">
-                            <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton"
-                                target="">ARS$500</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 otras_formas">
-                    <a class="boton" href="javascript:void(0)" mp-mode="dftl" name="MP-payButton" target="">otras
-                        formas
-                        de
-                        colaborar</a>
-                </div>
-            </article>
+                </article>
 
-            <article class="col-4 pad_4">
+                <article id="por_que_colaborar" class="col-12 col-md-10 col-lg-6 col-xl-4 pad_4">
 
-                <h2>Colaborá con Socios.red</h2>
-                <div class="linea pad_t_1 mar_b_2"></div>
-                <p>Las investigaciones que facilita socios.red pueden resultar incómodas para los gobiernos y los
-                    grandes
-                    poderes económicos. Necesitamos tu ayuda para que nuestro trabajo no dependa de la voluntad de otras
-                    instituciones.</p>
+                    <h2>¿Por qué colaborar con socios.red?</h2>
+                    <div class="linea pad_t_1 mar_b_2"></div>
+                    <p>Las investigaciones que facilita socios.red pueden resultar incómodas para los gobiernos y los
+                        grandes
+                        poderes económicos. Necesitamos tu ayuda para que nuestro trabajo no dependa de la voluntad de
+                        otras
+                        instituciones.</p>
 
-            </article>
-
+                </article>
+            </div>
 
             <article id="proceso" class="row pad_0 mar_0 center_r pad_t_10">
+                <div class="sombra_top"></div>
+                <h2 id="title_proceso" class="col-12 pad_b_2 mar_b_5">¿Qué hacemos?</h2>
 
-                <h2 class="col-12 pad_b_2 mar_b_5">Proceso</h2>
-
-                <div class="col-2 pad_inl_2 center_c">
+                <div class="col-10 col-sm-7 col-md-5 col-lg-2 pad_inl_2 pad_b_8 center_c">
                     <h2>1</h2>
-                    <img src="img/donacion.svg" alt="">
+                    <img src="img/donacion1.svg" alt="">
                     <div class="center_c">
                         <h4>Colaborá con
                             socios.red.</h4>
                         <div class="linea pad_t_2"></div>
                     </div>
                 </div>
-                <div class="col-2 pad_inl_2 center_c">
+                <div class="col-10 col-sm-7 col-md-5 col-lg-2 pad_inl_2 pad_b_8 center_c">
                     <h2>2</h2>
-                    <img src="img/chequeo.svg" alt="">
+                    <img src="img/chequeo1.svg" alt="">
                     <div class="center_c">
                         <h4>Nosotros limpiamos
                             y conectamos los datos.</h4>
                         <div class="linea pad_t_2"></div>
                     </div>
                 </div>
-                <div class="col-2 pad_inl_2 center_c">
+                <div class="col-10 col-sm-7 col-md-5 col-lg-2 pad_inl_2 pad_b_8 center_c">
                     <h2>3</h2>
-                    <img src="img/juntos.svg" alt="">
+                    <img src="img/juntos1.svg" alt="">
                     <div class="center_c">
                         <h4>Armamos juntos el
                             identikit del poder.</h4>
@@ -150,9 +175,9 @@
                         <div class="linea pad_t_2"></div>
                     </div>
                 </div>
-                <div class="col-2 pad_inl_2 center_c">
+                <div class="col-10 col-sm-7 col-md-5 col-lg-2 pad_inl_2 pad_b_8 center_c">
                     <h2>4</h2>
-                    <img src="img/justa.svg" alt="">
+                    <img src="img/justa1.svg" alt="">
                     <div class="center_c">
                         <h4>Creamos sociedades
                             más justas y transparentes.</h4>
@@ -165,7 +190,8 @@
 
             <!--comienza confiaron------------------------>
 
-            <article id="confiaron" class="row pad_0 mar_0 pad_block_10">
+            <article id="confiaron" class="row pad_0 mar_0 pad_t_2 pad_b_10">
+                <div class="sombra_bottom"></div>
 
                 <h2 id="title_confiaron" class="col-12"> Confiaron en Socios.red </h2>
 
@@ -176,7 +202,10 @@
                         Además, en junio de 2019, Google News Initiative nos seleccionó para brindarnos
                         infraestructura
                         en
-                        Google Cloud.</p>
+                        Google Cloud.
+                        En 2020, Socios.red fue preseleccionada como una de las mejores aplicaciones de noticias del
+                        mundo
+                        en los Sigma Data Journalism Awards.</p>
                 </article>
 
                 <article class="col-12 col-lg-8 confiaron center_r pad_t_2">
@@ -256,7 +285,7 @@
 
             <div id="info" class="col-12 center_r pad_block_2">
                 <div class="center_r pad_inl_2">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img class="img_socios" src="img/logo.png" alt=""></a>
                     <p>© Copyright</p>
                 </div>
 
@@ -264,15 +293,12 @@
                     <li> <a href=""><i class="far fa-envelope fa-2x"></i></a>
                         <p> ejemplo@gmail.com</p>
                     </li>
-                    <li> <a href=""><i class="fas fa-phone-alt fa-lg"></i></a>
-                        <p> +54 011-XXXXXX</p>
-                    </li>
                     <li> <a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
                 </ul>
 
                 <div class="seisuno pad_inl_2 pad_l_4 center_r"><a class=" center_r "
                         href="https://www.behance.net/LautaroGalman" target="_blank">
-                        <p> Sitio web diseñado por</p><img src="img/logo_color.png" alt="">
+                        <p> Página diseñada por</p><img src="img/logo_color.png" alt="">
                     </a>
                 </div>
             </div>
@@ -294,6 +320,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
+        <script src="funciones.js"></script>
 
     </section>
 </body>

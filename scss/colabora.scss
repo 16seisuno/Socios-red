@@ -1,8 +1,9 @@
 @import "main";
 
-header .active {
-    font-weight: 700;
-    color: $color2;
+header {
+    .full-menu {
+        background-color: $overlay-color-colabora;
+    }
 
 }
 
@@ -57,52 +58,11 @@ header .active {
     background-image: url(../img/textura8.svg);
     background-size: cover;
 
-    #confiaron {
-        justify-content: center;
-        background: linear-gradient(0deg, #ffffffe6 10%, #519e1900 100%);
-        text-align: center;
-        position: relative;
-        z-index: 3;
-
-        p {
-            font-weight: 400;
-            text-align: center;
-        }
-
-        #title_confiaron {
-            font-size: 3rem;
-            color: #ffffff;
-            padding-bottom: .5rem;
-        }
-
-        .confiaron {
-            justify-content: space-evenly;
-
-            img {
-                height: 80px;
-
-                &.coder {
-                    height: 65px;
-                }
-            }
-        }
-
-        .contribuyeron {
-            justify-content: center;
-
-            h2 {
-                font-size: 2rem;
-                color: #000000d9;
-                text-shadow: 0px 2px 2px #fff,
-                    0 0 0 #000,
-                    1px 4px 6px transparent;
-            }
-        }
+    div {
+        justify-content: space-evenly;
     }
 
     article {
-
-
 
         p {
             font-size: 18px;
@@ -115,6 +75,7 @@ header .active {
             justify-content: center;
 
             div {
+                justify-content: center;
 
                 &.otras_formas {
                     font-size: 1.5rem;
@@ -133,7 +94,7 @@ header .active {
 
                 div {
                     justify-content: center;
-
+                    cursor: pointer;
 
                     div {
                         padding: 1rem;
@@ -166,13 +127,8 @@ header .active {
                                 text-decoration: none;
                             }
                         }
-
-
-
                     }
                 }
-
-
             }
         }
 
@@ -188,6 +144,7 @@ header .active {
         h3 {
             font-size: 2.5rem;
             color: #fff;
+            text-align: center;
         }
 
         .linea {
@@ -202,9 +159,23 @@ header .active {
         text-align: center;
         position: relative;
         align-items: stretch;
+        background-color: #fff;
 
-        h2 {
-            font-size: 3.5rem;
+        .sombra_top {
+            box-shadow: inset 0 15px 20px -5px #ccd0ff;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            z-index: 1;
+        }
+
+        #title_proceso {
+            font-size: 4rem;
+            color: #00a9ffb3;
+            text-shadow: 0px 2px 2px #fff,
+                0 0 0 #000,
+                1px 4px 6px transparent;
         }
 
         div {
@@ -233,11 +204,154 @@ header .active {
         }
 
         .linea {
-            border-bottom: 5px solid #000;
+            border-bottom: 5px solid $color1;
         }
 
+    }
+
+
+    #confiaron {
+        justify-content: center;
+        background: linear-gradient(0deg, $color1 10%, #fff 100%);
+        text-align: center;
+        position: relative;
+        z-index: 3;
+
+        .sombra_bottom {
+            box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+        }
+
+        p {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        #title_confiaron {
+            font-size: 3rem;
+            color: #000000d9;
+            text-shadow: 0px 2px 2px #fff,
+                0 0 0 #000,
+                1px 4px 6px transparent;
+            padding-bottom: .5rem;
+        }
+
+        .confiaron {
+            justify-content: space-evenly;
+
+            img {
+                height: 80px;
+
+                &.coder {
+                    height: 65px;
+                }
+            }
+        }
+
+        .contribuyeron {
+            justify-content: center;
+
+            h2 {
+                font-size: 2rem;
+                color: #000000d9;
+                text-shadow: 0px 2px 2px #fff,
+                    0 0 0 #000,
+                    1px 4px 6px transparent;
+            }
+        }
+    }
+}
+
+/* termina confiaron */
+
+
+@include media("<=medium") {
+
+    #main_colabora {
+        top: 65px;
+        padding-top: 2rem;
+        padding-bottom: 0px;
+        background-position: right;
+
+        .sombra_top,
+        .sombra_bottom {
+            top: 0px;
+        }
+
+        article {
+            padding-right: 0px;
+            padding-left: 0px;
+
+            h1 {
+                font-size: 3.5rem;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+
+            iframe {
+                padding: 0px;
+                width: 100%;
+            }
+        }
+    }
+
+    #colabora {
+        padding-top: 1rem;
+
+        #donar {
+            div {
+                justify-content: center;
+            }
+        }
+
+        #por_que_colaborar {
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        #proceso {
+            padding-top: 3rem;
+        }
+    }
+
+
+    #confiaron {
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+
+        #title_confiaron {
+            font-size: 2.7rem !important;
+        }
+
+        #texto_confiaron,
+        .contribuyeron {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        img {
+            margin-bottom: .5rem;
+        }
+
+        .contribuyeron {
+            padding-top: 2rem;
+        }
     }
 }
 
 
-/* termina confiaron */
+@include media(">=medium", "<=large") {
+
+    #main_colabora {
+        article {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}
