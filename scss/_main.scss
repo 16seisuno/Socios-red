@@ -204,7 +204,6 @@ header {
         li {
             padding-bottom: .2rem;
             margin-bottom: .5rem;
-            font-size: 3em;
             color: $texts-and-icons;
             opacity: 0;
             transform: translateY(2%);
@@ -214,7 +213,7 @@ header {
             &:after {
                 content: "";
                 position: absolute;
-                height: 5px;
+                height: 3px;
                 width: 0%;
                 left: 0;
                 bottom: 0;
@@ -227,6 +226,7 @@ header {
             }
 
             a {
+                font-size: 2rem;
                 text-decoration: none;
                 color: #fff;
                 text-transform: uppercase;
