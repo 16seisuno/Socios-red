@@ -3,6 +3,11 @@
 
 
 header {
+    .menu_1 a.active {
+        font-weight: 700;
+        color: $color4;
+    }
+
     .full-menu {
         background-color: $overlay-color-conocenos;
     }
@@ -345,6 +350,7 @@ header {
     #nosotros {
         top: 65px;
         padding-top: 2rem;
+        padding-bottom: 3.5rem;
         background-position: right;
 
         .sombra_top,
@@ -375,7 +381,7 @@ header {
 
     #data {
         background-position: right;
-        padding-top: 3rem;
+        padding-top: 6rem;
 
         h2 {
             padding-left: 1rem;
