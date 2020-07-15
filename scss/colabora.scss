@@ -1,6 +1,11 @@
 @import "main";
 
 header {
+    .menu_1 a.active {
+        font-weight: 700;
+        color: $color2;
+    }
+
     .full-menu {
         background-color: $overlay-color-colabora;
     }
@@ -300,7 +305,7 @@ header {
     }
 
     #colabora {
-        padding-top: 1rem;
+        padding-top: 4rem;
 
         #donar {
             div {
@@ -316,6 +321,10 @@ header {
 
         #proceso {
             padding-top: 3rem;
+
+            #title_proceso {
+                font-size: 3rem;
+            }
         }
     }
 

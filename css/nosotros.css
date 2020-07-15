@@ -29,6 +29,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .pad_0 {
@@ -1305,6 +1307,11 @@ footer li a {
 * Testing
 *
 **/
+header .menu_1 a.active {
+  font-weight: 700;
+  color: #ffc107;
+}
+
 header .full-menu {
   background-color: #ffc107;
 }
@@ -1642,6 +1649,7 @@ header .full-menu {
   #nosotros {
     top: 65px;
     padding-top: 2rem;
+    padding-bottom: 3.5rem;
     background-position: right;
   }
   #nosotros .sombra_top,
@@ -1665,7 +1673,7 @@ header .full-menu {
   }
   #data {
     background-position: right;
-    padding-top: 3rem;
+    padding-top: 6rem;
   }
   #data h2 {
     padding-left: 1rem;

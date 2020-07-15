@@ -29,6 +29,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .pad_0 {
@@ -1300,6 +1302,11 @@ footer li a {
   }
 }
 
+header .menu_1 a.active {
+  font-weight: 700;
+  color: #519e19;
+}
+
 header .full-menu {
   background-color: #519e19;
 }
@@ -1602,7 +1609,7 @@ header .full-menu {
     width: 100%;
   }
   #colabora {
-    padding-top: 1rem;
+    padding-top: 4rem;
   }
   #colabora #donar div {
     -webkit-box-pack: center;
@@ -1614,6 +1621,9 @@ header .full-menu {
   }
   #colabora #proceso {
     padding-top: 3rem;
+  }
+  #colabora #proceso #title_proceso {
+    font-size: 3rem;
   }
   #confiaron {
     padding-top: 0rem;
