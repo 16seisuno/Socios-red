@@ -847,7 +847,6 @@ header .full-menu {
 header .full-menu li {
   padding-bottom: .2rem;
   margin-bottom: .5rem;
-  font-size: 3em;
   color: #fff;
   opacity: 0;
   -webkit-transform: translateY(2%);
@@ -860,7 +859,7 @@ header .full-menu li {
 header .full-menu li:after {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 3px;
   width: 0%;
   left: 0;
   bottom: 0;
@@ -874,6 +873,7 @@ header .full-menu li:hover:after {
 }
 
 header .full-menu li a {
+  font-size: 2rem;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -1668,6 +1668,9 @@ header .full-menu {
   #nosotros #nos_info {
     padding: 0px;
   }
+  #nosotros #nos_info h4 {
+    font-size: 1.2rem;
+  }
   #nosotros #nos_info #que_es {
     padding-bottom: 0px;
   }
@@ -1683,9 +1686,12 @@ header .full-menu {
   #data .data {
     padding-top: 2rem;
   }
+  #data .data .ultimo {
+    padding-bottom: 2.5rem;
+  }
   #conexiones {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
   #conexiones .sombra_top,
   #conexiones .sombra_bottom {
@@ -1714,7 +1720,7 @@ header .full-menu {
     max-width: 300px !important;
   }
   #confiaron {
-    padding-top: 0rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
   #confiaron #title_confiaron {
