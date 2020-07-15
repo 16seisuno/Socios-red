@@ -28,23 +28,45 @@
     <section class="container-fluid pad_inl_0">
 
 
-
         <!--comienza header--------------------------->
 
         <header class="center_r pad_inl_2 pad_block_1">
-            <a href="index.html"><img src="img/logo.png" alt="logo_socios.red"></a>
+            <a class="logo_header" href="index.html"><img src="img/logo.png" alt="logo_socios.red"></a>
 
 
-            <nav>
+            <nav class="menu_1">
                 <ul class="mar_0">
                     <li>
-                        <a href="index.html" class="active">Inicio</a> </li>
+                        <a href="index.html">Inicio</a> </li>
                     <li>
-                        <a href="nosotros.html">Conocenos</a> </li>
+                        <a href="nosotros.html" class="active">Conocenos</a> </li>
                     <li>
                         <a href="colabora.html">Colabora</a> </li>
+                    <li>
+                        <a href="#footer">Contacto</a> </li>
                 </ul>
             </nav>
+
+            <div class="full-menu">
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="activo">Inicio</a> </li>
+                        <li>
+                            <a href="nosotros.html">Conocenos</a> </li>
+                        <li>
+                            <a href="colabora.html">Colabora</a> </li>
+                        <li>
+                            <a class="menu_contacto" href="#footer">Contacto</a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hamburguer">
+                <div class="lines line-top"></div>
+                <div class="lines line-mid"></div>
+                <div class="lines line-bottom"></div>
+            </div>
         </header>
 
         <!--termina header---------------------------->
@@ -254,7 +276,10 @@
                         Partnership, para ser apoyado con recursos brindados por la Fundación Conocimiento Abierto.
                         Además, en junio de 2019, Google News Initiative nos seleccionó para brindarnos infraestructura
                         en
-                        Google Cloud.</p>
+                        Google Cloud.
+                        En 2020, Socios.red fue preseleccionada como una de las mejores aplicaciones de noticias del
+                        mundo
+                        en los Sigma Data Journalism Awards.</p>
                 </article>
 
                 <article class="col-12 col-lg-8 confiaron center_r pad_t_2">
@@ -338,7 +363,7 @@
 
             <div id="info" class="col-12 center_r pad_block_2">
                 <div class="center_r pad_inl_2">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img class="img_socios" src="img/logo.png" alt=""></a>
                     <p>© Copyright</p>
                 </div>
 
@@ -346,15 +371,12 @@
                     <li> <a href=""><i class="far fa-envelope fa-2x"></i></a>
                         <p> ejemplo@gmail.com</p>
                     </li>
-                    <li> <a href=""><i class="fas fa-phone-alt fa-lg"></i></a>
-                        <p> +54 011-XXXXXX</p>
-                    </li>
                     <li> <a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
                 </ul>
 
                 <div class="seisuno pad_inl_2 pad_l_4 center_r"><a class=" center_r "
                         href="https://www.behance.net/LautaroGalman" target="_blank">
-                        <p> Sitio web diseñado por</p><img src="img/logo_color.png" alt="">
+                        <p> Página diseñada por</p><img src="img/logo_color.png" alt="">
                     </a>
                 </div>
             </div>
@@ -376,6 +398,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
+        <script src="funciones.js"></script>
 
     </section>
 </body>

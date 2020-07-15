@@ -1,3 +1,6 @@
+@import "breakpoints";
+
+
 $font_title:'Montserrat',
 sans-serif;
 $font_text: 'Lato',
@@ -8,6 +11,27 @@ $color2: #519e19;
 $color3: #ee5254;
 $color4: #ffc107;
 
+
+//Variables for change animation and colors of background, menu overlay, text and icons
+
+$transition-type: ease-in;
+$overlay-color-conocenos: $color4;
+$overlay-color-colabora: $color2;
+$texts-and-icons: #fff;
+
+//ZOOM EFFECT ON HOVER MENU ICONS AND LINKS
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
 
 * {
     margin: 0px;
@@ -146,12 +170,148 @@ p {
 
 header {
     justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    background: #000;
 
     img {
         height: 50px;
     }
 
-    nav {
+    div.hamburguer {
+        display: none;
+    }
+
+    .full-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // SET BASIC CONTENT AND ANIMATION EFFECT- MENU OVERLAY
+
+    .full-menu {
+        position: absolute;
+        opacity: 0.5;
+        transform: translateX(100%);
+        transition: all 400ms $transition-type;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        right: 0px;
+
+        li {
+            padding-bottom: .2rem;
+            margin-bottom: .5rem;
+            font-size: 3em;
+            color: $texts-and-icons;
+            opacity: 0;
+            transform: translateY(2%);
+            transition: all 300ms $transition-type;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 0%;
+                left: 0;
+                bottom: 0;
+                background-color: $texts-and-icons;
+                transition: width 200ms $transition-type;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .activo {
+            font-weight: 700;
+        }
+
+        &.active {
+            transform: translateX(0%);
+            opacity: 1;
+            z-index: 0;
+
+            .home {
+                transition-delay: .3s;
+            }
+
+            .about {
+                transition-delay: .4s;
+            }
+
+            .works {
+                transition-delay: .5s;
+            }
+
+            .contact {
+                transition-delay: .6s;
+            }
+
+            li {
+                opacity: 1;
+                transform: translateX(0%);
+
+                &:hover {
+                    animation: zoom 200ms $transition-type;
+                }
+            }
+        }
+    }
+
+    // SET BASIC CONTENT AND ANIMATION EFFECT- HAMBURGUER MENU
+
+    .hamburguer {
+        width: 2em;
+        cursor: pointer;
+
+        &:hover {
+            animation: zoom 300ms $transition-type;
+        }
+    }
+
+    .lines {
+        background-color: $texts-and-icons;
+        width: 100%;
+        height: 5px;
+        margin: 5px 0;
+        transition: all 450ms $transition-type;
+    }
+
+    // SET ANIMATION EFFECT - HAMBURGUER MENU CLOSED
+
+    .close-hamburguer {
+        .lines {
+            cursor: pointer;
+        }
+
+        .line-top {
+            transform: translateY(200%) rotate(45deg);
+        }
+
+        .line-mid {
+            opacity: 0;
+        }
+
+        .line-bottom {
+            transform: translateY(-200%) rotate(135deg);
+        }
+    }
+
+    .menu_1 {
         display: flex;
         align-items: center;
         height: 50px;
@@ -166,21 +326,22 @@ header {
             list-style: none;
             padding-left: 1rem;
             padding-right: 1rem;
+        }
 
-            a {
-                font-size: 1.2rem;
-                color: #fff;
-                text-transform: uppercase;
+        a {
+            font-size: 1.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+                color: #d6d6d6;
                 text-decoration: none;
-
-                &:hover {
-                    color: #d6d6d6;
-                    text-decoration: none;
-                }
             }
         }
     }
 }
+
 
 footer {
     text-decoration: none;
@@ -397,4 +558,84 @@ footer {
         0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 5px 15px #d9d9d9,
         0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@include media("<=medium") {
+
+    header {
+        width: 100%;
+        position: fixed;
+
+        div.hamburguer {
+            display: block;
+        }
+
+        .menu_1 {
+            display: none;
+        }
+    }
+
+    .menu_1 {
+
+        li {
+            padding-left: .6rem;
+            padding-right: .6rem;
+        }
+    }
+
+    footer {
+        #formulario {
+            padding-left: 0px;
+            padding-right: 0px;
+
+            h5 {
+                margin-bottom: 1rem;
+            }
+
+            div {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+
+        #info {
+            padding-left: 0px;
+            padding-right: 0px;
+
+            div {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                justify-content: center;
+
+                &.seisuno {
+                    justify-content: center;
+
+                    img {
+                        padding-right: 0px !important;
+                    }
+                }
+
+                .img_socios {
+                    padding-left: 0px !important;
+
+                }
+            }
+
+            ul {
+                padding-left: 0px;
+                justify-content: center;
+
+                li {
+                    padding-left: 0px !important;
+                }
+
+                .fa-envelope,
+                .fa-phone-alt {
+                    padding-left: 0px !important;
+                }
+
+            }
+        }
+    }
 }
