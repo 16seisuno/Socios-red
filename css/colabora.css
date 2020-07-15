@@ -1600,7 +1600,7 @@ header .full-menu {
     padding-left: 0px;
   }
   #main_colabora article h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
   }
@@ -1611,36 +1611,48 @@ header .full-menu {
   #colabora {
     padding-top: 4rem;
   }
+  #colabora #donar h3 {
+    font-size: 2rem;
+  }
   #colabora #donar div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #colabora #por_que_colaborar {
+    padding-top: 1rem;
+  }
   #colabora #por_que_colaborar h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #colabora #proceso {
     padding-top: 3rem;
   }
   #colabora #proceso #title_proceso {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  #confiaron {
+  #colabora #confiaron {
     padding-top: 0rem;
     padding-bottom: 3rem;
   }
-  #confiaron #title_confiaron {
-    font-size: 2.7rem !important;
-  }
-  #confiaron #texto_confiaron,
-  #confiaron .contribuyeron {
+  #colabora #confiaron #title_confiaron {
+    font-size: 2rem !important;
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  #confiaron img {
+  #colabora #confiaron #texto_confiaron,
+  #colabora #confiaron .contribuyeron {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #colabora #confiaron #texto_confiaron p,
+  #colabora #confiaron .contribuyeron p {
+    text-align: justify;
+  }
+  #colabora #confiaron img {
     margin-bottom: .5rem;
   }
-  #confiaron .contribuyeron {
+  #colabora #confiaron .contribuyeron {
     padding-top: 2rem;
   }
 }

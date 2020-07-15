@@ -362,7 +362,7 @@ header {
             padding: 0px;
 
             h1 {
-                font-size: 3rem;
+                font-size: 2rem;
                 text-align: center;
                 padding: 0px;
                 padding-bottom: 1rem;
@@ -383,7 +383,8 @@ header {
         background-position: right;
         padding-top: 6rem;
 
-        h2 {
+        article#title_data h2.title_data {
+            font-size: 2rem;
             padding-left: 1rem;
             padding-right: 1rem;
         }
@@ -412,34 +413,47 @@ header {
 
     }
 
-    #equipo {
-        padding-top: 3rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+    #participantes {
 
-        .row {
-            padding-top: 0rem !important;
+        #equipo {
+            padding-top: 2rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
 
-            .card {
-                padding-left: .5rem;
-                padding-right: .5rem;
-                max-width: 300px !important;
+            #title_equipo {
+                font-size: 2rem;
+            }
+
+            .row {
+                padding-top: 0rem !important;
+
+                .card {
+                    padding-left: .5rem;
+                    padding-right: .5rem;
+                    max-width: 300px !important;
+                }
             }
         }
     }
 
     #confiaron {
-        padding-top: 3rem;
+        padding-top: 0rem;
         padding-bottom: 3rem;
 
         #title_confiaron {
-            font-size: 2.7rem !important;
+            font-size: 2rem !important;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
 
         #texto_confiaron,
         .contribuyeron {
             padding-left: 2rem;
             padding-right: 2rem;
+
+            p {
+                text-align: justify;
+            }
         }
 
         img {
@@ -448,6 +462,7 @@ header {
 
         .contribuyeron {
             padding-top: 2rem;
+
         }
     }
 }
