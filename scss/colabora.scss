@@ -37,7 +37,7 @@ header {
     }
 
     .sombra_top {
-        box-shadow: inset 0 15px 20px -5px #ccd0ff;
+        box-shadow: inset 0 8px 10px -5px #ccd0ff;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -45,12 +45,13 @@ header {
     }
 
     .sombra_bottom {
-        box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+        box-shadow: inset 0 -10px 10px -10px #ccd0ff;
         position: absolute;
         z-index: 1;
         width: 100%;
         height: 100%;
     }
+
 
 }
 
@@ -167,11 +168,10 @@ header {
         background-color: #fff;
 
         .sombra_top {
-            box-shadow: inset 0 15px 20px -5px #ccd0ff;
+            box-shadow: inset 0 8px 10px -5px #ccd0ff;
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 0px;
             z-index: 1;
         }
 
@@ -223,12 +223,11 @@ header {
         z-index: 3;
 
         .sombra_bottom {
-            box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+            box-shadow: inset 0 -10px 10px -10px #ccd0ff;
             position: absolute;
             z-index: 1;
             width: 100%;
             height: 100%;
-            top: 0px;
         }
 
         p {
@@ -300,12 +299,18 @@ header {
             iframe {
                 padding: 0px;
                 width: 100%;
+                box-shadow: none;
             }
         }
     }
 
     #colabora {
         padding-top: 4rem;
+
+        .sombra_top,
+        .sombra_bottom {
+            top: 0px;
+        }
 
         #donar {
             h3 {

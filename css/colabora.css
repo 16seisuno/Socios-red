@@ -1336,8 +1336,8 @@ header .full-menu {
 }
 
 #main_colabora .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
+          box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1345,8 +1345,8 @@ header .full-menu {
 }
 
 #main_colabora .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+          box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -1476,12 +1476,11 @@ header .full-menu {
 }
 
 #colabora #proceso .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
+          box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0px;
   z-index: 1;
 }
 
@@ -1535,13 +1534,12 @@ header .full-menu {
 }
 
 #colabora #confiaron .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+          box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
-  top: 0px;
 }
 
 #colabora #confiaron p {
@@ -1606,9 +1604,15 @@ header .full-menu {
   #main_colabora article iframe {
     padding: 0px;
     width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   #colabora {
     padding-top: 4rem;
+  }
+  #colabora .sombra_top,
+  #colabora .sombra_bottom {
+    top: 0px;
   }
   #colabora #donar h3 {
     font-size: 2rem;
