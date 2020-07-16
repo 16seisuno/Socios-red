@@ -826,9 +826,6 @@ header .full-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header .full-menu {
@@ -842,6 +839,7 @@ header .full-menu {
   height: 100vh;
   top: 0px;
   right: 0px;
+  padding-left: 2rem;
 }
 
 header .full-menu li {
@@ -876,7 +874,8 @@ header .full-menu li a {
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 header .full-menu ul {
@@ -884,7 +883,7 @@ header .full-menu ul {
 }
 
 header .full-menu .activo {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 header .full-menu.active {
@@ -990,8 +989,8 @@ header .menu_1 li {
 header .menu_1 a {
   font-size: 1.2rem;
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 header .menu_1 a:hover {
@@ -1303,7 +1302,7 @@ footer li a {
 }
 
 header .menu_1 a.active {
-  font-weight: 700;
+  font-weight: 900;
   color: #519e19;
 }
 

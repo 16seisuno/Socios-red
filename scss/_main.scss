@@ -186,7 +186,6 @@ header {
     .full-menu {
         display: flex;
         align-items: center;
-        justify-content: center;
     }
 
     // SET BASIC CONTENT AND ANIMATION EFFECT- MENU OVERLAY
@@ -200,6 +199,7 @@ header {
         height: 100vh;
         top: 0px;
         right: 0px;
+        padding-left: 2rem;
 
         li {
             padding-bottom: .2rem;
@@ -229,7 +229,8 @@ header {
                 font-size: 2rem;
                 text-decoration: none;
                 color: #fff;
-                text-transform: uppercase;
+                font-family: $font_text;
+                font-weight: 700;
             }
         }
 
@@ -238,7 +239,7 @@ header {
         }
 
         .activo {
-            font-weight: 700;
+            font-weight: 900;
         }
 
         &.active {
@@ -332,8 +333,8 @@ header {
         a {
             font-size: 1.2rem;
             color: #fff;
-            text-transform: uppercase;
             text-decoration: none;
+            font-family: $font_text;
 
             &:hover {
                 color: #d6d6d6;

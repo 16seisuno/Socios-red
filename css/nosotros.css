@@ -826,9 +826,6 @@ header .full-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header .full-menu {
@@ -842,6 +839,7 @@ header .full-menu {
   height: 100vh;
   top: 0px;
   right: 0px;
+  padding-left: 2rem;
 }
 
 header .full-menu li {
@@ -876,7 +874,8 @@ header .full-menu li a {
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 header .full-menu ul {
@@ -884,7 +883,7 @@ header .full-menu ul {
 }
 
 header .full-menu .activo {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 header .full-menu.active {
@@ -990,8 +989,8 @@ header .menu_1 li {
 header .menu_1 a {
   font-size: 1.2rem;
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 header .menu_1 a:hover {
@@ -1308,7 +1307,7 @@ footer li a {
 *
 **/
 header .menu_1 a.active {
-  font-weight: 700;
+  font-weight: 900;
   color: #ffc107;
 }
 
@@ -1329,8 +1328,8 @@ header .full-menu {
 }
 
 #nosotros .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
+          box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1338,8 +1337,8 @@ header .full-menu {
 }
 
 #nosotros .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+          box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -1353,7 +1352,7 @@ header .full-menu {
 }
 
 #nosotros #nos_descripcion h1 {
-  color: #020202c7;
+  color: #ffc107cc;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
   text-transform: uppercase;
 }
@@ -1389,9 +1388,9 @@ header .full-menu {
 }
 
 #nosotros #nos_info .fondo {
-  background-color: #00c3ff10;
-  -webkit-box-shadow: 0 5px 15px #b6c2df, 0 0 2px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 5px 15px #b6c2df, 0 0 2px rgba(0, 0, 0, 0.1) inset;
+  background-color: #f4fcffa3;
+  -webkit-box-shadow: 0 1px 10px #c5cde1, 0 0 2px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 10px #c5cde1, 0 0 2px rgba(0, 0, 0, 0.1) inset;
   border: 5px solid #fff;
   position: absolute;
   z-index: 2;
@@ -1402,9 +1401,7 @@ header .full-menu {
 /* termina nosotros */
 /* comienza data */
 #data {
-  background-color: #ffe407;
-  background-image: url(../img/textura6.png);
-  background-size: cover;
+  background-color: #ffc107;
 }
 
 #data article#title_data {
@@ -1433,24 +1430,21 @@ header .full-menu {
 
 #data article.data div h4 {
   font-weight: 900;
-  color: #000000d9;
-  text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  color: #000000b8;
+  text-shadow: 0px 2px 2px #ffffff8c, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
 #data article.data div p {
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0px;
   padding-bottom: .6rem;
-  color: #000000d9;
-  text-shadow: 0px 2px 2px #ffffffc4, 0 0 0 #000, 1px 4px 6px transparent;
+  color: #000;
 }
 
 #data article.data div i {
-  color: #ffffff00;
-  text-shadow: 0px 3px 1px #fff, 0 0 0 #333, 1px 4px 3px #ffffff9c;
+  color: #fff;
   padding-bottom: 1rem;
 }
 
@@ -1470,8 +1464,8 @@ header .full-menu {
 }
 
 #conexiones .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
+          box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1479,8 +1473,8 @@ header .full-menu {
 }
 
 #conexiones .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+          box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -1499,7 +1493,7 @@ header .full-menu {
 }
 
 #conexiones .title_conex h2 .conex {
-  color: #519e19;
+  color: #ffc107d6;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
@@ -1559,6 +1553,10 @@ header .full-menu {
   position: relative;
   max-width: 400px;
   margin-bottom: .5rem;
+}
+
+#participantes #equipo article .card h4 {
+  color: #ffc107;
 }
 
 #participantes #equipo article .card ul {
@@ -1656,14 +1654,17 @@ header .full-menu {
   #nosotros .sombra_bottom {
     top: 0px;
   }
+  #nosotros .fondo {
+    display: none;
+  }
   #nosotros #nos_descripcion {
     padding: 0px;
   }
   #nosotros #nos_descripcion h1 {
     font-size: 2rem;
     text-align: center;
-    padding: 0px;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0px;
   }
   #nosotros #nos_info {
     padding: 0px;
