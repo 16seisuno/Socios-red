@@ -1482,6 +1482,7 @@ header .full-menu {
   width: 100%;
   height: 100%;
   z-index: 1;
+  top: 0px;
 }
 
 #colabora #proceso #title_proceso {
@@ -1540,6 +1541,7 @@ header .full-menu {
   z-index: 1;
   width: 100%;
   height: 100%;
+  top: 0px;
 }
 
 #colabora #confiaron p {
