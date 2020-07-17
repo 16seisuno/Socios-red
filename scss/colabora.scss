@@ -2,7 +2,7 @@
 
 header {
     .menu_1 a.active {
-        font-weight: 700;
+        font-weight: 900;
         color: $color2;
     }
 
@@ -13,16 +13,12 @@ header {
 }
 
 #main_colabora {
-    background-color: #fff;
+    background-color: #f8f8ff;
     justify-content: center;
-    background-image: url(../img/textura2.png);
-    background-size: cover;
-    background-position: center;
     position: relative;
-    z-index: 2;
+
 
     article {
-        z-index: 3;
         justify-content: center;
 
         h1 {
@@ -37,20 +33,19 @@ header {
     }
 
     .sombra_top {
-        box-shadow: inset 0 15px 20px -5px #ccd0ff;
+        box-shadow: inset 0 8px 10px -5px #ccd0ff;
         position: absolute;
         width: 100%;
         height: 100%;
-        z-index: 1;
     }
 
     .sombra_bottom {
-        box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+        box-shadow: inset 0 -10px 10px -10px #ccd0ff;
         position: absolute;
-        z-index: 1;
         width: 100%;
         height: 100%;
     }
+
 
 }
 
@@ -167,12 +162,12 @@ header {
         background-color: #fff;
 
         .sombra_top {
-            box-shadow: inset 0 15px 20px -5px #ccd0ff;
+            box-shadow: inset 0 8px 10px -5px #ccd0ff;
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 0px;
             z-index: 1;
+            top: 0px;
         }
 
         #title_proceso {
@@ -223,7 +218,7 @@ header {
         z-index: 3;
 
         .sombra_bottom {
-            box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+            box-shadow: inset 0 -10px 10px -10px #ccd0ff;
             position: absolute;
             z-index: 1;
             width: 100%;
@@ -300,12 +295,18 @@ header {
             iframe {
                 padding: 0px;
                 width: 100%;
+                box-shadow: none;
             }
         }
     }
 
     #colabora {
         padding-top: 4rem;
+
+        .sombra_top,
+        .sombra_bottom {
+            top: 0px;
+        }
 
         #donar {
             h3 {

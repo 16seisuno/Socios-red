@@ -780,7 +780,7 @@
 }
 
 body {
-  background-color: #1a0e10;
+  background-color: #f8f8ff;
 }
 
 h1 {
@@ -826,12 +826,10 @@ header .full-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header .full-menu {
+  display: none;
   position: absolute;
   opacity: 0.5;
   -webkit-transform: translateX(100%);
@@ -842,6 +840,7 @@ header .full-menu {
   height: 100vh;
   top: 0px;
   right: 0px;
+  padding-left: 2rem;
 }
 
 header .full-menu li {
@@ -876,7 +875,8 @@ header .full-menu li a {
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 header .full-menu ul {
@@ -884,7 +884,7 @@ header .full-menu ul {
 }
 
 header .full-menu .activo {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 header .full-menu.active {
@@ -990,13 +990,33 @@ header .menu_1 li {
 header .menu_1 a {
   font-size: 1.2rem;
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 header .menu_1 a:hover {
   color: #d6d6d6;
   text-decoration: none;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#particles-js-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 footer {
@@ -1246,6 +1266,11 @@ footer li a {
   header div.hamburguer {
     display: block;
   }
+  header div.full-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .menu_1 {
     display: none;
   }
@@ -1303,7 +1328,7 @@ footer li a {
 }
 
 header .menu_1 a.active {
-  font-weight: 700;
+  font-weight: 900;
   color: #519e19;
 }
 
@@ -1312,19 +1337,14 @@ header .full-menu {
 }
 
 #main_colabora {
-  background-color: #fff;
+  background-color: #f8f8ff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/textura2.png);
-  background-size: cover;
-  background-position: center;
   position: relative;
-  z-index: 2;
 }
 
 #main_colabora article {
-  z-index: 3;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1337,19 +1357,17 @@ header .full-menu {
 }
 
 #main_colabora .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
+          box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
 #main_colabora .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+          box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
-  z-index: 1;
   width: 100%;
   height: 100%;
 }
@@ -1477,13 +1495,13 @@ header .full-menu {
 }
 
 #colabora #proceso .sombra_top {
-  -webkit-box-shadow: inset 0 15px 20px -5px #ccd0ff;
-          box-shadow: inset 0 15px 20px -5px #ccd0ff;
+  -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
+          box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0px;
   z-index: 1;
+  top: 0px;
 }
 
 #colabora #proceso #title_proceso {
@@ -1536,8 +1554,8 @@ header .full-menu {
 }
 
 #colabora #confiaron .sombra_bottom {
-  -webkit-box-shadow: inset 0 -15px 20px -10px #ccd0ff;
-          box-shadow: inset 0 -15px 20px -10px #ccd0ff;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+          box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -1607,9 +1625,15 @@ header .full-menu {
   #main_colabora article iframe {
     padding: 0px;
     width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   #colabora {
     padding-top: 4rem;
+  }
+  #colabora .sombra_top,
+  #colabora .sombra_bottom {
+    top: 0px;
   }
   #colabora #donar h3 {
     font-size: 2rem;
