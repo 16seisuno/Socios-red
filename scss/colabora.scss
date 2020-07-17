@@ -13,16 +13,12 @@ header {
 }
 
 #main_colabora {
-    background-color: #fff;
+    background-color: #f8f8ff;
     justify-content: center;
-    background-image: url(../img/textura2.png);
-    background-size: cover;
-    background-position: center;
     position: relative;
-    z-index: 2;
+
 
     article {
-        z-index: 3;
         justify-content: center;
 
         h1 {
@@ -41,13 +37,11 @@ header {
         position: absolute;
         width: 100%;
         height: 100%;
-        z-index: 1;
     }
 
     .sombra_bottom {
         box-shadow: inset 0 -10px 10px -10px #ccd0ff;
         position: absolute;
-        z-index: 1;
         width: 100%;
         height: 100%;
     }

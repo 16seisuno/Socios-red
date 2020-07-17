@@ -145,7 +145,7 @@ $texts-and-icons: #fff;
 
 
 body {
-    background-color: #1a0e10;
+    background-color: #f8f8ff;
 }
 
 h1 {
@@ -191,6 +191,7 @@ header {
     // SET BASIC CONTENT AND ANIMATION EFFECT- MENU OVERLAY
 
     .full-menu {
+        display: none;
         position: absolute;
         opacity: 0.5;
         transform: translateX(100%);
@@ -344,6 +345,25 @@ header {
     }
 }
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#particles-js-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
 
 footer {
     text-decoration: none;
@@ -572,9 +592,14 @@ footer {
             display: block;
         }
 
+        div.full-menu {
+            display: flex;
+        }
+
         .menu_1 {
             display: none;
         }
+
     }
 
     .menu_1 {

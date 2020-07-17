@@ -780,7 +780,7 @@
 }
 
 body {
-  background-color: #1a0e10;
+  background-color: #f8f8ff;
 }
 
 h1 {
@@ -829,6 +829,7 @@ header .full-menu {
 }
 
 header .full-menu {
+  display: none;
   position: absolute;
   opacity: 0.5;
   -webkit-transform: translateX(100%);
@@ -996,6 +997,26 @@ header .menu_1 a {
 header .menu_1 a:hover {
   color: #d6d6d6;
   text-decoration: none;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#particles-js-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 footer {
@@ -1245,6 +1266,11 @@ footer li a {
   header div.hamburguer {
     display: block;
   }
+  header div.full-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .menu_1 {
     display: none;
   }
@@ -1311,19 +1337,14 @@ header .full-menu {
 }
 
 #main_colabora {
-  background-color: #fff;
+  background-color: #f8f8ff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/textura2.png);
-  background-size: cover;
-  background-position: center;
   position: relative;
-  z-index: 2;
 }
 
 #main_colabora article {
-  z-index: 3;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1341,14 +1362,12 @@ header .full-menu {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
 #main_colabora .sombra_bottom {
   -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
           box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
-  z-index: 1;
   width: 100%;
   height: 100%;
 }

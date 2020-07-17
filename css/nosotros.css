@@ -780,7 +780,7 @@
 }
 
 body {
-  background-color: #1a0e10;
+  background-color: #f8f8ff;
 }
 
 h1 {
@@ -829,6 +829,7 @@ header .full-menu {
 }
 
 header .full-menu {
+  display: none;
   position: absolute;
   opacity: 0.5;
   -webkit-transform: translateX(100%);
@@ -996,6 +997,26 @@ header .menu_1 a {
 header .menu_1 a:hover {
   color: #d6d6d6;
   text-decoration: none;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#particles-js-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 footer {
@@ -1245,6 +1266,11 @@ footer li a {
   header div.hamburguer {
     display: block;
   }
+  header div.full-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .menu_1 {
     display: none;
   }
@@ -1322,9 +1348,7 @@ header .full-menu {
           justify-content: space-evenly;
   background-color: #f8f8ff;
   position: relative;
-  z-index: 2;
-  background-image: url(../img/textura2.png);
-  background-position: center;
+  /* ---- particles.js container ---- */
 }
 
 #nosotros .sombra_top {
@@ -1333,14 +1357,12 @@ header .full-menu {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
 #nosotros .sombra_bottom {
   -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
           box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
-  z-index: 1;
   width: 100%;
   height: 100%;
 }
@@ -1352,7 +1374,7 @@ header .full-menu {
 }
 
 #nosotros #nos_descripcion h1 {
-  color: #ffc107cc;
+  color: #000c;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
   text-transform: uppercase;
 }
@@ -1361,47 +1383,49 @@ header .full-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
+  /*
+        .fondo {
+            background-color: #f4fcffa3;
+            box-shadow: 0 1px 10px #c5cde1,
+                0 0 2px rgba(0, 0, 0, 0.1) inset;
+            border: 5px solid #fff;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+
+        }
+*/
 }
 
 #nosotros #nos_info article {
-  padding: 2rem;
   z-index: 3;
 }
 
 #nosotros #nos_info h4 {
   color: #000;
-  border-bottom: 3px solid;
 }
 
 #nosotros #nos_info p {
   color: #000;
 }
 
-#nosotros #nos_info .fondo {
-  background-color: #f4fcffa3;
-  -webkit-box-shadow: 0 1px 10px #c5cde1, 0 0 2px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 1px 10px #c5cde1, 0 0 2px rgba(0, 0, 0, 0.1) inset;
-  border: 5px solid #fff;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-}
-
 /* termina nosotros */
 /* comienza data */
 #data {
-  background-color: #ffc107;
+  background-color: #fff007;
+  background-image: url(../img/textura6.png);
+  background-size: cover;
 }
 
 #data article#title_data {
@@ -1455,12 +1479,11 @@ header .full-menu {
 /* termina data */
 /* comienza conexiones */
 #conexiones {
-  background: #f8f8ff;
-  background-image: url(../img/textura2.png);
   position: relative;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: #f8f8ff;
 }
 
 #conexiones .sombra_top {
@@ -1469,14 +1492,12 @@ header .full-menu {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
 #conexiones .sombra_bottom {
   -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
           box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
-  z-index: 1;
   width: 100%;
   height: 100%;
 }
@@ -1493,7 +1514,7 @@ header .full-menu {
 }
 
 #conexiones .title_conex h2 .conex {
-  color: #ffc107d6;
+  color: #519e19c4;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
@@ -1556,7 +1577,7 @@ header .full-menu {
 }
 
 #participantes #equipo article .card h4 {
-  color: #ffc107;
+  color: #000;
 }
 
 #participantes #equipo article .card ul {
@@ -1664,7 +1685,7 @@ header .full-menu {
     font-size: 2rem;
     text-align: center;
     padding-top: 1rem;
-    margin: 0px;
+    margin-bottom: 2rem;
   }
   #nosotros #nos_info {
     padding: 0px;
