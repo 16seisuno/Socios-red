@@ -168,135 +168,135 @@ header {
 
         }
     }
+}
 
-    #proceso {
-        justify-content: space-evenly;
-        text-align: center;
-        position: relative;
-        align-items: stretch;
-        background-color: #fff;
+#proceso {
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    align-items: stretch;
+    background-color: #fff;
 
-        .sombra_top {
-            box-shadow: inset 0 8px 10px -5px #ccd0ff;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            top: 0px;
-        }
+    .sombra_top {
+        box-shadow: inset 0 8px 10px -5px #ccd0ff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0px;
+    }
 
-        #title_proceso {
-            font-size: 4rem;
-            color: #00a9ffb3;
-            text-shadow: 0px 2px 2px #fff,
-                0 0 0 #000,
-                1px 4px 6px transparent;
-        }
-
-
-        .a3 {
-            animation-delay: 300ms;
-        }
-
-        .a5 {
-            animation-delay: 500ms;
-        }
-
-        .a7 {
-            animation-delay: 700ms;
-        }
-
-        .a9 {
-            animation-delay: 900ms;
-        }
-
-        div {
-            align-items: center;
-            justify-content: space-evenly;
-            position: relative;
-            z-index: 2;
-
-            h2 {
-                left: 10px;
-                top: -50px;
-                font-size: 7rem;
-                position: absolute;
-                color: rgba(0, 0, 0, 0.192);
-                z-index: 1;
-                font-family: $font_text;
-            }
-        }
-
-        img {
-            height: 120px;
-            margin-bottom: 2rem;
-            position: relative;
-            z-index: 2;
-
-        }
-
-        .linea {
-            border-bottom: 5px solid $color1;
-        }
-
+    #title_proceso {
+        font-size: 4rem;
+        color: #00a9ffb3;
+        text-shadow: 0px 2px 2px #fff,
+            0 0 0 #000,
+            1px 4px 6px transparent;
     }
 
 
-    #confiaron {
-        justify-content: center;
-        background: linear-gradient(0deg, $color1 10%, #fff 100%);
-        text-align: center;
+    .a3 {
+        animation-delay: 300ms;
+    }
+
+    .a5 {
+        animation-delay: 500ms;
+    }
+
+    .a7 {
+        animation-delay: 700ms;
+    }
+
+    .a9 {
+        animation-delay: 900ms;
+    }
+
+    div {
+        align-items: center;
+        justify-content: space-evenly;
         position: relative;
-        z-index: 3;
+        z-index: 2;
 
-        .sombra_bottom {
-            box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+        h2 {
+            left: 10px;
+            top: -50px;
+            font-size: 7rem;
             position: absolute;
+            color: rgba(0, 0, 0, 0.192);
             z-index: 1;
-            width: 100%;
-            height: 100%;
-            top: 0px;
+            font-family: $font_text;
         }
+    }
 
-        p {
-            font-weight: 400;
-            text-align: center;
+    img {
+        height: 120px;
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .linea {
+        border-bottom: 5px solid $color1;
+    }
+
+}
+
+
+#confiaron {
+    overflow: hidden;
+    justify-content: center;
+    background: linear-gradient(0deg, $color1 10%, #fff 100%);
+    text-align: center;
+    position: relative;
+
+    .sombra_bottom {
+        box-shadow: inset 0 -10px 10px -10px #ccd0ff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+    }
+
+    p {
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #title_confiaron {
+        font-size: 3rem;
+        color: #000000d9;
+        text-shadow: 0px 2px 2px #fff,
+            0 0 0 #000,
+            1px 4px 6px transparent;
+        padding-bottom: .5rem;
+    }
+
+    .confiaron {
+        justify-content: space-evenly;
+
+        img {
+            height: 80px;
+
+            &.coder {
+                height: 65px;
+            }
         }
+    }
 
-        #title_confiaron {
-            font-size: 3rem;
+    .contribuyeron {
+        justify-content: center;
+
+        h2 {
+            font-size: 2rem;
             color: #000000d9;
             text-shadow: 0px 2px 2px #fff,
                 0 0 0 #000,
                 1px 4px 6px transparent;
-            padding-bottom: .5rem;
-        }
-
-        .confiaron {
-            justify-content: space-evenly;
-
-            img {
-                height: 80px;
-
-                &.coder {
-                    height: 65px;
-                }
-            }
-        }
-
-        .contribuyeron {
-            justify-content: center;
-
-            h2 {
-                font-size: 2rem;
-                color: #000000d9;
-                text-shadow: 0px 2px 2px #fff,
-                    0 0 0 #000,
-                    1px 4px 6px transparent;
-            }
         }
     }
 }
+
 
 /* termina confiaron */
 

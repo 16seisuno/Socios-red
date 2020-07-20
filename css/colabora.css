@@ -1504,7 +1504,7 @@ header .full-menu {
   border-bottom: 7px solid #fff;
 }
 
-#colabora #proceso {
+#proceso {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1516,7 +1516,7 @@ header .full-menu {
   background-color: #fff;
 }
 
-#colabora #proceso .sombra_top {
+#proceso .sombra_top {
   -webkit-box-shadow: inset 0 8px 10px -5px #ccd0ff;
           box-shadow: inset 0 8px 10px -5px #ccd0ff;
   position: absolute;
@@ -1526,33 +1526,33 @@ header .full-menu {
   top: 0px;
 }
 
-#colabora #proceso #title_proceso {
+#proceso #title_proceso {
   font-size: 4rem;
   color: #00a9ffb3;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
 }
 
-#colabora #proceso .a3 {
+#proceso .a3 {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
-#colabora #proceso .a5 {
+#proceso .a5 {
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
 }
 
-#colabora #proceso .a7 {
+#proceso .a7 {
   -webkit-animation-delay: 700ms;
           animation-delay: 700ms;
 }
 
-#colabora #proceso .a9 {
+#proceso .a9 {
   -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
 }
 
-#colabora #proceso div {
+#proceso div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1563,7 +1563,7 @@ header .full-menu {
   z-index: 2;
 }
 
-#colabora #proceso div h2 {
+#proceso div h2 {
   left: 10px;
   top: -50px;
   font-size: 7rem;
@@ -1573,18 +1573,19 @@ header .full-menu {
   font-family: "Lato", sans-serif;
 }
 
-#colabora #proceso img {
+#proceso img {
   height: 120px;
   margin-bottom: 2rem;
   position: relative;
   z-index: 2;
 }
 
-#colabora #proceso .linea {
+#proceso .linea {
   border-bottom: 5px solid #00a9ff;
 }
 
-#colabora #confiaron {
+#confiaron {
+  overflow: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1592,52 +1593,50 @@ header .full-menu {
   background: linear-gradient(0deg, #00a9ff 10%, #fff 100%);
   text-align: center;
   position: relative;
-  z-index: 3;
 }
 
-#colabora #confiaron .sombra_bottom {
+#confiaron .sombra_bottom {
   -webkit-box-shadow: inset 0 -10px 10px -10px #ccd0ff;
           box-shadow: inset 0 -10px 10px -10px #ccd0ff;
   position: absolute;
-  z-index: 1;
   width: 100%;
   height: 100%;
   top: 0px;
 }
 
-#colabora #confiaron p {
+#confiaron p {
   font-weight: 400;
   text-align: center;
 }
 
-#colabora #confiaron #title_confiaron {
+#confiaron #title_confiaron {
   font-size: 3rem;
   color: #000000d9;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
   padding-bottom: .5rem;
 }
 
-#colabora #confiaron .confiaron {
+#confiaron .confiaron {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-#colabora #confiaron .confiaron img {
+#confiaron .confiaron img {
   height: 80px;
 }
 
-#colabora #confiaron .confiaron img.coder {
+#confiaron .confiaron img.coder {
   height: 65px;
 }
 
-#colabora #confiaron .contribuyeron {
+#confiaron .contribuyeron {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#colabora #confiaron .contribuyeron h2 {
+#confiaron .contribuyeron h2 {
   font-size: 2rem;
   color: #000000d9;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
