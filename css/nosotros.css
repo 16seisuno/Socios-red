@@ -1377,6 +1377,8 @@ header .full-menu {
   color: #000c;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
   text-transform: uppercase;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 #nosotros #nos_info {
@@ -1393,31 +1395,18 @@ header .full-menu {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
-  /*
-        .fondo {
-            background-color: #f4fcffa3;
-            box-shadow: 0 1px 10px #c5cde1,
-                0 0 2px rgba(0, 0, 0, 0.1) inset;
-            border: 5px solid #fff;
-            position: absolute;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-
-        }
-*/
 }
 
-#nosotros #nos_info article {
-  z-index: 3;
-}
-
-#nosotros #nos_info h4 {
+#nosotros #nos_info article .title_nos {
   color: #000;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
 #nosotros #nos_info p {
   color: #000;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 /* termina nosotros */
@@ -1437,6 +1426,8 @@ header .full-menu {
   font-size: 3rem;
   color: #000000d9;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 #data article.data {
@@ -1450,6 +1441,8 @@ header .full-menu {
 
 #data article.data div {
   text-align: center;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 #data article.data div h4 {
@@ -1511,6 +1504,8 @@ header .full-menu {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.7);
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 #conexiones .title_conex h2 .conex {
@@ -1520,6 +1515,8 @@ header .full-menu {
 
 #conexiones article ul {
   text-align: justify;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 /* termina conexiones */
@@ -1539,7 +1536,7 @@ header .full-menu {
 }
 
 #participantes #equipo {
-  background-color: #ffc10787;
+  background-color: #ffcd07ab;
   z-index: 3;
   position: relative;
 }
@@ -1550,6 +1547,8 @@ header .full-menu {
   padding-bottom: .5rem;
   color: #000000d9;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 #participantes #equipo article {
@@ -1572,7 +1571,7 @@ header .full-menu {
   -webkit-box-shadow: inset 0 -2px 15px 0px #d7d9f0;
           box-shadow: inset 0 -2px 15px 0px #d7d9f0;
   position: relative;
-  max-width: 400px;
+  max-width: 320px;
   margin-bottom: .5rem;
 }
 
@@ -1620,6 +1619,8 @@ header .full-menu {
   margin-bottom: 1.5rem;
   -webkit-filter: drop-shadow(0px 0px 5px #e1e1e1);
           filter: drop-shadow(0px 0px 5px #e1e1e1);
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 #participantes #equipo article .card p {
@@ -1629,8 +1630,8 @@ header .full-menu {
 
 #participantes #confiaron {
   background: #ffffff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffffe6), to(#ffc10791));
-  background: linear-gradient(0deg, #ffffffe6 10%, #ffc10791 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffffe6), to(#ffcd07ab));
+  background: linear-gradient(0deg, #ffffffe6 10%, #ffcd07ab 100%);
   text-align: center;
   position: relative;
   z-index: 3;
@@ -1641,6 +1642,8 @@ header .full-menu {
   padding-bottom: .5rem;
   color: #000000d9;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 #participantes #confiaron .confiaron {
@@ -1651,6 +1654,8 @@ header .full-menu {
 
 #participantes #confiaron .confiaron img {
   height: 80px;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 #participantes #confiaron .confiaron img.coder {
@@ -1661,6 +1666,11 @@ header .full-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#participantes #confiaron p {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 /* termina participantes */
@@ -1739,7 +1749,42 @@ header .full-menu {
   #participantes #equipo .row .card {
     padding-left: .5rem;
     padding-right: .5rem;
-    max-width: 300px !important;
+    max-width: none !important;
+  }
+  #participantes #equipo .row .card div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #participantes #equipo .row .card .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    max-width: 300px;
+    margin-inline: 2rem;
+  }
+  #participantes #equipo .row .card .content p {
+    margin: 0px;
+  }
+  #participantes #equipo .row .card .content .redes_equipo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    padding-top: 1rem;
+  }
+  #participantes #equipo .row .card .content .redes_equipo ul {
+    margin: 0px;
+    margin-bottom: 1rem;
+  }
+  #participantes #equipo .row .card .arreglo1 {
+    display: none !important;
   }
   #confiaron {
     padding-top: 3rem;
@@ -1764,6 +1809,56 @@ header .full-menu {
   }
   #confiaron .contribuyeron {
     padding-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .card {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    max-width: none !important;
+  }
+  .card div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card div img {
+    margin-right: 2rem;
+  }
+  .card .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    max-width: 300px;
+  }
+  .card .content p {
+    margin: 0px;
+  }
+  .card .content .redes_equipo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    padding-top: 1rem;
+  }
+  .card .content .redes_equipo ul {
+    margin: 0px;
+  }
+  .card .arreglo1 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .arreglo {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=nosotros.css.map */
