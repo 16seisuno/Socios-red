@@ -1675,6 +1675,10 @@ header .full-menu {
 
 /* termina participantes */
 @media (max-width: 768px) {
+  * {
+    -webkit-animation-delay: 300ms !important;
+            animation-delay: 300ms !important;
+  }
   #nosotros {
     top: 65px;
     padding-top: 2rem;
@@ -1802,7 +1806,7 @@ header .full-menu {
   }
   #confiaron #texto_confiaron p,
   #confiaron .contribuyeron p {
-    text-align: justify;
+    text-align: center;
   }
   #confiaron img {
     margin-bottom: .5rem;
