@@ -63,6 +63,7 @@ header {
     }
 
     article {
+        animation-delay: 300ms;
 
         p {
             font-size: 18px;
@@ -77,10 +78,23 @@ header {
             div {
                 justify-content: center;
 
+                .b1 {
+                    animation-delay: 300ms;
+                }
+
+                .b3 {
+                    animation-delay: 600ms;
+                }
+
+                .b5 {
+                    animation-delay: 900ms;
+                }
+
                 &.otras_formas {
                     font-size: 1.5rem;
                     width: 100%;
                     text-align: center;
+                    animation-delay: 900ms;
 
                     a {
                         color: #fff;
@@ -107,8 +121,13 @@ header {
                         transition: .2s ease-in;
 
                         &:hover {
-                            box-shadow: 0 2px 10px #1d3c0791,
+                            box-shadow: 0 2px 10px #132b04,
                                 0 0 5px #0b9fe4 inset;
+
+                            a {
+                                color: #00aaff9f;
+                                text-decoration: none;
+                            }
                         }
 
                         a {
@@ -122,10 +141,6 @@ header {
 
                             transition: .2s ease-in;
 
-                            &:hover {
-                                color: #00aaff9f;
-                                text-decoration: none;
-                            }
                         }
                     }
                 }
@@ -176,6 +191,23 @@ header {
             text-shadow: 0px 2px 2px #fff,
                 0 0 0 #000,
                 1px 4px 6px transparent;
+        }
+
+
+        .a3 {
+            animation-delay: 300ms;
+        }
+
+        .a5 {
+            animation-delay: 500ms;
+        }
+
+        .a7 {
+            animation-delay: 700ms;
+        }
+
+        .a9 {
+            animation-delay: 900ms;
         }
 
         div {

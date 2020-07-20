@@ -1390,6 +1390,11 @@ header .full-menu {
           justify-content: space-evenly;
 }
 
+#colabora article {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
 #colabora article p {
   font-size: 18px;
   color: #000;
@@ -1408,10 +1413,27 @@ header .full-menu {
           justify-content: center;
 }
 
+#colabora article#donar div .b1 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+#colabora article#donar div .b3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+#colabora article#donar div .b5 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
 #colabora article#donar div.otras_formas {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 #colabora article#donar div.otras_formas a {
@@ -1443,8 +1465,13 @@ header .full-menu {
 }
 
 #colabora article#donar div div div:hover {
-  -webkit-box-shadow: 0 2px 10px #1d3c0791, 0 0 5px #0b9fe4 inset;
-          box-shadow: 0 2px 10px #1d3c0791, 0 0 5px #0b9fe4 inset;
+  -webkit-box-shadow: 0 2px 10px #132b04, 0 0 5px #0b9fe4 inset;
+          box-shadow: 0 2px 10px #132b04, 0 0 5px #0b9fe4 inset;
+}
+
+#colabora article#donar div div div:hover a {
+  color: #00aaff9f;
+  text-decoration: none;
 }
 
 #colabora article#donar div div div a {
@@ -1455,11 +1482,6 @@ header .full-menu {
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
   -webkit-transition: .2s ease-in;
   transition: .2s ease-in;
-}
-
-#colabora article#donar div div div a:hover {
-  color: #00aaff9f;
-  text-decoration: none;
 }
 
 #colabora article p {
@@ -1508,6 +1530,26 @@ header .full-menu {
   font-size: 4rem;
   color: #00a9ffb3;
   text-shadow: 0px 2px 2px #fff, 0 0 0 #000, 1px 4px 6px transparent;
+}
+
+#colabora #proceso .a3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+#colabora #proceso .a5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+#colabora #proceso .a7 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+#colabora #proceso .a9 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 #colabora #proceso div {
