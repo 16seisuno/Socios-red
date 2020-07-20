@@ -1645,6 +1645,10 @@ header .full-menu {
 
 /* termina confiaron */
 @media (max-width: 768px) {
+  * {
+    -webkit-animation-delay: 300ms !important;
+            animation-delay: 300ms !important;
+  }
   #main_colabora {
     top: 65px;
     padding-top: 2rem;
@@ -1714,7 +1718,7 @@ header .full-menu {
   }
   #colabora #confiaron #texto_confiaron p,
   #colabora #confiaron .contribuyeron p {
-    text-align: justify;
+    text-align: center;
   }
   #colabora #confiaron img {
     margin-bottom: .5rem;

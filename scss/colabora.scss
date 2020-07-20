@@ -303,6 +303,10 @@ header {
 
 @include media("<=medium") {
 
+    * {
+        animation-delay: 300ms !important;
+    }
+
     #main_colabora {
         top: 65px;
         padding-top: 2rem;
@@ -385,7 +389,7 @@ header {
                 padding-right: 2rem;
 
                 p {
-                    text-align: justify;
+                    text-align: center;
                 }
             }
 
