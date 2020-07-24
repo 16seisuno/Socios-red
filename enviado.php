@@ -26,6 +26,23 @@
 </head>
 
 <body>
+    
+<?php 
+$myemail = 'contacto@socios.red';
+$name = $_POST['nombre'];
+$email = $_POST['email'];
+$telefono = $_POST['telefono'];
+$orgempresa = $_POST['orgempresa'];
+$motivo_de_consulta = $_POST['motivo_de_consulta'];
+$message = $_POST['mensaje'];
+
+$to = $myemail;
+$email_subject = "Nuevo mensaje: $motivo_de_consulta";
+$email_body = "Haz recibido un nuevo mensaje. \r\n Nombre: $name \r\n Correo: $email \r\n Telefono: $telefono \r\n Organización Empresa: $orgempresa \r\n Mensaje: \r\n $message";
+$headers = "From: $email";
+
+mail($to, $email_subject, $email_body, $headers);
+?>
     <section class="container-fluid pad_inl_0 overflow-hidden">
 
         <!--comienza header--------------------------->
@@ -243,7 +260,7 @@
             <div class="col-12 col-lg-8 col-xl-6">
                 <h2 class="col-12 mar_0">Si tenes alguna <span> consulta </span></h2>
                 <h5>por favor, no dudes en escribirnos</h5>
-                <<form class="col-12 center_r " action="enviado.php" method="post">
+                <<form class="col-12 center_r " action="enviar.php" method="post">
                     <div id="form_datos" class="col-12 col-md-6 pad_inl_1">
                         <fieldset>
                             <input name="nombre" placeholder="Nombre y apellido" type="text" tabindex="1" required>
