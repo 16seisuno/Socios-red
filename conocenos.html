@@ -346,19 +346,21 @@
                 <div class="col-12 col-lg-8 col-xl-6">
                     <h2 class="col-12 mar_0">Si tenes alguna <span> consulta </span></h2>
                     <h5>por favor, no dudes en escribirnos</h5>
-                    <form class="col-12 center_r " action="" method="post">
+                    <form class="col-12 center_r " action="enviado1.php" method="post">
                         <div id="form_datos" class="col-12 col-md-6 pad_inl_1">
                             <fieldset>
-                                <input placeholder="Nombre y apellido" type="text" tabindex="1" required>
+                                <input name="nombre" placeholder="Nombre y apellido" type="text" tabindex="1" required>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Email" type="email" tabindex="2" required>
+                                <input name="email" placeholder="Email" type="email" tabindex="2" required>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Número de teléfono (opcional)" type="tel" tabindex="3">
+                                <input name="telefono" placeholder="Número de teléfono (opcional)" type="tel"
+                                    tabindex="3">
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Organización o empresa (opcional)" type="text" tabindex="1">
+                                <input name="orgempresa" placeholder="Organización o empresa (opcional)" type="text"
+                                    tabindex="1">
                             </fieldset>
 
                         </div>
@@ -372,7 +374,8 @@
                                 </select>
                             </fieldset>
                             <fieldset class="mensaje">
-                                <textarea placeholder="Escriba su mensaje aquí...." tabindex="5" required></textarea>
+                                <textarea name="mensaje" placeholder="Escriba su mensaje aquí...." tabindex="5"
+                                    required></textarea>
                             </fieldset>
                             <fieldset class="col-12">
                                 <button name="submit" type="submit" id="contact-submit"
