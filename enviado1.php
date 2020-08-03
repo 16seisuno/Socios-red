@@ -26,7 +26,6 @@
 </head>
 
 <body>
-    
 
 <?php 
 $myemail = 'contacto@socios.red';
@@ -239,10 +238,10 @@ mail($to, $email_subject, $email_body, $headers);
 
             <section id="equipo" class="center_c pad_t_10">
 
-                <h2 id="title_equipo" class="box wow fadeIn">El equipo</h2>
+                <h2 id="title_equipo">El equipo</h2>
                 <article class="row">
 
-                    <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6 center_c card mar_inl_3 pad_inl_2 box wow flipInY"
+                    <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6 center_c card mar_inl_3 pad_inl_2"
                         style="animation-delay: 200ms;">
                         <div class="center_c pad_inl_2"><img src="img/foto_nico.jpg" alt="">
                             <div class="content">
@@ -265,8 +264,8 @@ mail($to, $email_subject, $email_body, $headers);
                         </div>
 
                     </div>
-                    <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6 card center_c card mar_inl_3 pad_inl_1 box
-                        wow flipInY" style="animation-delay: 300ms;">
+                    <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6 card center_c card mar_inl_3 pad_inl_1
+            " style="animation-delay: 300ms;">
                         <div class="center_c pad_inl_2"><img src="img/foto_matias.jpeg" alt="">
                             <div class="content">
                                 <h4>Matías Batocchia</h4>
@@ -277,8 +276,8 @@ mail($to, $email_subject, $email_body, $headers);
                         </div>
                     </div>
 
-                    <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6 card center_c card mar_inl_3 pad_inl_1 box
-                        wow flipInY" style="animation-delay: 400ms;">
+                    <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6 card center_c card mar_inl_3 pad_inl_1 "
+                        style="animation-delay: 400ms;">
                         <div class="center_c pad_inl_2"><img src="img/foto_lisan.jpeg" alt="">
                             <div class="content">
                                 <h4>Lisandro Espejo</h4>
@@ -313,9 +312,9 @@ mail($to, $email_subject, $email_body, $headers);
 
             <section id="confiaron" class="center_c pad_block_10">
 
-                <h2 id="title_confiaron" class="pad_inl_2 box wow fadeIn"> Confiaron en Socios.red </h2>
+                <h2 id="title_confiaron" class="pad_inl_2"> Confiaron en Socios.red </h2>
 
-                <article id="texto_confiaron" class="col-12 col-sm-10 col-lg-6 pad_t_2 box wow fadeIn">
+                <article id="texto_confiaron" class="col-12 col-sm-10 col-lg-6 pad_t_2">
                     <p>Socios.red fue seleccionado en 2017 como uno de los proyectos ganadores del DataCamp de Open
                         Government
                         Partnership, para ser apoyado con recursos brindados por la Fundación Conocimiento Abierto.
@@ -328,15 +327,15 @@ mail($to, $email_subject, $email_body, $headers);
                 </article>
 
                 <article class="col-12 col-lg-8 confiaron center_r pad_t_2">
-                    <img class="box wow bounceIn" src="img/ogp.png" alt="Open_Government_Partnership">
-                    <img class="box wow bounceIn" src="img/conocimiento-abierto.png" alt="Conocimiento_Abierto">
-                    <img class="box wow bounceIn" src="img/google-initiative.png" alt="Google_Initiative">
-                    <img class="coder box wow bounceIn" src="img/coderhouse.png" alt="Coder_House">
+                    <img src="img/ogp.png" alt="Open_Government_Partnership">
+                    <img src="img/conocimiento-abierto.png" alt="Conocimiento_Abierto">
+                    <img src="img/google-initiative.png" alt="Google_Initiative">
+                    <img class="coder" src="img/coderhouse.png" alt="Coder_House">
                 </article>
 
                 <article class="col-12 col-sm-10 col-lg-6 contribuyeron center_r pad_t_6">
-                    <h2 class="box wow fadeIn" style="animation-delay: 300ms;"> Contribuidores </h2>
-                    <p class="box wow fadeIn">Durante el proceso, socios.red recibió el enriquecedor aporte del trabajo
+                    <h2 style="animation-delay: 300ms;"> Contribuidores </h2>
+                    <p>Durante el proceso, socios.red recibió el enriquecedor aporte del trabajo
                         de los desarrolladores
                         Alfredo Ramirez, Bruno Salerno, Damián Silvani, Martín Sarsale, Franco Bellomo y Valeria
                         Tiffenberg.
@@ -365,7 +364,7 @@ mail($to, $email_subject, $email_body, $headers);
                 <div class="col-12 col-lg-8 col-xl-6">
                     <h2 class="col-12 mar_0">Si tenes alguna <span> consulta </span></h2>
                     <h5>por favor, no dudes en escribirnos</h5>
-                    <form class="col-12 center_r " action="enviar.php" method="post">
+                    <form class="col-12 center_r " action="enviado1.php" method="post">
                         <div id="form_datos" class="col-12 col-md-6 pad_inl_1">
                             <fieldset>
                                 <input name="nombre" placeholder="Nombre y apellido" type="text" tabindex="1" required>
@@ -467,4 +466,3 @@ mail($to, $email_subject, $email_body, $headers);
 </body>
 
 </html>
-
