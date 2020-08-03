@@ -312,6 +312,8 @@ header {
         padding-top: 2rem;
         padding-bottom: 0px;
         background-position: right;
+        height: 100vh;
+        align-content: space-evenly;
 
         .sombra_top,
         .sombra_bottom {
@@ -329,6 +331,7 @@ header {
             }
 
             iframe {
+                height: 250px;
                 padding: 0px;
                 width: 100%;
                 box-shadow: none;
@@ -363,15 +366,15 @@ header {
                 font-size: 2rem;
             }
         }
+    }
 
-        #proceso {
-            padding-top: 3rem;
+    #proceso {
+        padding-top: 3rem;
 
-            #title_proceso {
-                font-size: 2rem;
-            }
+        #title_proceso {
+            font-size: 2rem;
+            margin-bottom: 4rem;
         }
-
 
         #confiaron {
             padding-top: 0rem;

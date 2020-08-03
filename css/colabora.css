@@ -1653,6 +1653,9 @@ header .full-menu {
     padding-top: 2rem;
     padding-bottom: 0px;
     background-position: right;
+    height: 100vh;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
   }
   #main_colabora .sombra_top,
   #main_colabora .sombra_bottom {
@@ -1668,6 +1671,7 @@ header .full-menu {
     padding-bottom: 1rem;
   }
   #main_colabora article iframe {
+    height: 250px;
     padding: 0px;
     width: 100%;
     -webkit-box-shadow: none;
@@ -1695,34 +1699,35 @@ header .full-menu {
   #colabora #por_que_colaborar h2 {
     font-size: 2rem;
   }
-  #colabora #proceso {
+  #proceso {
     padding-top: 3rem;
   }
-  #colabora #proceso #title_proceso {
+  #proceso #title_proceso {
     font-size: 2rem;
+    margin-bottom: 4rem;
   }
-  #colabora #confiaron {
+  #proceso #confiaron {
     padding-top: 0rem;
     padding-bottom: 3rem;
   }
-  #colabora #confiaron #title_confiaron {
+  #proceso #confiaron #title_confiaron {
     font-size: 2rem !important;
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  #colabora #confiaron #texto_confiaron,
-  #colabora #confiaron .contribuyeron {
+  #proceso #confiaron #texto_confiaron,
+  #proceso #confiaron .contribuyeron {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  #colabora #confiaron #texto_confiaron p,
-  #colabora #confiaron .contribuyeron p {
+  #proceso #confiaron #texto_confiaron p,
+  #proceso #confiaron .contribuyeron p {
     text-align: center;
   }
-  #colabora #confiaron img {
+  #proceso #confiaron img {
     margin-bottom: .5rem;
   }
-  #colabora #confiaron .contribuyeron {
+  #proceso #confiaron .contribuyeron {
     padding-top: 2rem;
   }
 }
